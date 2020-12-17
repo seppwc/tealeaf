@@ -1,0 +1,16 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "start": "node ./example/index.js",
+    "test:all": "lerna run test",
+    "test:core": "lerna run test --scope=@teal/core",
+    "test:css": "lerna run test --scope=@teal/css",
+    "test:reset": "lerna run test --scope=@teal/reset",
+    "test:ui": "lerna run test --scope=@teal/ui",
+    "bootstrap": "lerna exec -- npm link"
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
+}
