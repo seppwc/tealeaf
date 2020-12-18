@@ -43,12 +43,13 @@ p {
 button {
   --hover-y: translatey(0px);
   --default-transition: 300ms var(--tl-ease-cubic-out);
+  cursor: pointer;
   margin: var(--tl-size-5);
   background: var(--tl-indigo-500);
   border: none;
-  padding: var(--tl-size-8) var(--tl-size-14);
+  padding: var(--tl-size-7) var(--tl-size-14);
   color: var(--tl-white-000);
-  border-radius: var(--tl-size-4);
+  border-radius: var(--tl-radius-2);
   text-transform: uppercase;
   letter-spacing: var(--tl-size-1);
   box-shadow: var(--tl-shadow-1);
@@ -59,17 +60,32 @@ button {
 
 button:hover {
   --hover-y: translateY(-1px);
-  box-shadow: var(--tl-shadow-3);
+  box-shadow: var(--tl-shadow-6);
+}
+
+.container {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+article {
+  height: 400px;
+  width: 200px;
+  background-image: var(--bg);
+  margin: 1ch;
+  border-radius: var(--tl-radius-4);
+  box-shadow: var(--tl-shadow-5);
 }
 
 .box {
   --span: var(--tl-size-16);
-  --bg: var(--tl-grey-200);
-  --shadow: var(--tl-shadow-1);
+  /* --bg: var(--tl-grey-200); */
+  --shadow: ;
   --ease: var(--tl-ease-sine-in);
-  --text: var(--tl-black-000);
+  --text: var(--tl-grey-800);
+  --radius: var(--tl-radius-2);
   margin: var(--tl-size-6);
-  border-radius: var(--tl-size-5);
+  border-radius: var(--radius);
   display: flex;
   height: var(--span);
   width: var(--span);
@@ -78,8 +94,44 @@ button:hover {
   justify-content: center;
   align-items: center;
   color: var(--text);
-  transition: transform 1s var(--ease);
-  font-size: var(--tl-size-11);
+  transition: all 1s var(--ease);
+}
+
+.box.s-1 {
+  --shadow: var(--tl-shadow-0);
+}
+.box.s-2 {
+  --shadow: var(--tl-shadow-1);
+}
+.box.s-3 {
+  --shadow: var(--tl-shadow-2);
+}
+.box.s-4 {
+  --shadow: var(--tl-shadow-3);
+}
+.box.s-5 {
+  --shadow: var(--tl-shadow-4);
+}
+.box.s-6 {
+  --shadow: var(--tl-shadow-5);
+}
+.box.s-7 {
+  --shadow: var(--tl-shadow-6);
+}
+.box.s-8 {
+  --shadow: var(--tl-shadow-7);
+}
+.box.s-9 {
+  --shadow: var(--tl-insetshadow-0);
+}
+.box.s-10 {
+  --shadow: var(--tl-insetshadow-1);
+}
+.box.s-11 {
+  --shadow: var(--tl-insetshadow-2);
+}
+.box.s-12 {
+  --shadow: var(--tl-insetshadow-3);
 }
 
 .move {
@@ -88,23 +140,23 @@ button:hover {
 
 .primary {
   --bg: var(--tl-teal-400);
-  --text: var(--tl-white-300);
+  --text: var(--tl-teal-900);
 }
 .success {
   --bg: var(--tl-green-400);
-  --text: var(--tl-white-300);
+  --text: var(--tl-green-700);
 }
 .danger {
   --bg: var(--tl-red-500);
-  --text: var(--tl-white-300);
+  --text: var(--tl-white-000);
 }
 .attention {
   --bg: var(--tl-yellow-400);
-  --text: var(--tl-black-000);
+  --text: var(--tl-warm-grey-600);
 }
 .info {
   --bg: var(--tl-blue-400);
-  --text: var(--tl-white-400);
+  --text: var(--tl-cool-grey-900);
 }
 
 .sin.in {
@@ -180,4 +232,28 @@ button:hover {
 }
 .back.inout {
   --ease: var(--tl-ease-back-inout);
+}
+
+.r-1 {
+  --radius: var(--tl-radius-1);
+}
+
+.r-2 {
+  --radius: var(--tl-radius-2);
+}
+
+.r-3 {
+  --radius: var(--tl-radius-3);
+}
+
+.r-4 {
+  --radius: var(--tl-radius-4);
+}
+
+.r-5 {
+  --radius: var(--tl-radius-5);
+}
+
+.r-full {
+  --radius: var(--tl-radius-full);
 }
