@@ -104,7 +104,7 @@ button:hover {
 }
 .info {
   --bg: var(--tl-blue-400);
-  --text: var(--tl-white-300);
+  --text: var(--tl-white-400);
 }
 
 .sin.in {
