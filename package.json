@@ -2,7 +2,8 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "start": "node ./example/index.js",
+    "start": "parcel ./example/index.html",
+    "build:core": "lerna run build --scope=@teal/core",
     "test:all": "lerna run test",
     "test:core": "lerna run test --scope=@teal/core",
     "test:css": "lerna run test --scope=@teal/css",
@@ -11,6 +12,7 @@
     "bootstrap": "lerna exec -- npm link"
   },
   "devDependencies": {
-    "lerna": "^3.22.1"
+    "lerna": "^3.22.1",
+    "parcel-bundler": "^1.12.4"
   }
 }
