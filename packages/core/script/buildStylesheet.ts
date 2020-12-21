@@ -6,11 +6,11 @@ import {
 import { writeFile } from "fs";
 
 const values = [
-  BuildToCSSString(Colors, true),
-  BuildToCSSString(Elevation, false),
-  BuildToCSSString(Scale, false),
-  BuildToCSSString(Eases, false, ["in", "out", "inout"]),
-  BuildToCSSString(Radius, false, ["1", "2", "3", "4", "5", "full"]),
+  BuildToCSSString(Colors),
+  BuildToCSSString(Elevation),
+  BuildToCSSString(Scale),
+  BuildToCSSString(Eases),
+  BuildToCSSString(Radius),
 ];
 
 writeFile("teal-core.css", WrapWithRoot(values), () => {});
