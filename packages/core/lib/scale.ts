@@ -2,7 +2,7 @@ import { TealValueObject } from "../types";
 
 export const Scale: TealValueObject = {
   size: [
-    `0px`,
+    "0px",
     "0.06rem",
     "0.13rem",
     "0.19rem",
