@@ -148,6 +148,15 @@ p {
   margin-bottom: 1rem;
 }
 
+a {
+  text-decoration-style: dashed;
+  text-underline-offset: 0.19em;
+  color: #1e7e7e;
+}
+a:visited {
+  color: #6c44cd;
+}
+
 h1,
 h2,
 h3,
@@ -232,6 +241,11 @@ input[type=submit],
   transition: all 200ms ease;
   text-decoration: none;
   line-height: 1;
+}
+button:visited,
+input[type=submit]:visited,
+[data-as=button]:visited {
+  color: #1f4b4b;
 }
 button:focus,
 input[type=submit]:focus,
