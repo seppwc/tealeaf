@@ -4,10 +4,12 @@
   "scripts": {
     "start": "parcel ./example/index.html",
     "build:core": "lerna run build --scope=@teal/core",
+    "build:element": "lerna run build --scope=@teal/element",
+    "build-w:element": "lerna run build:watch --scope=@teal/element",
     "test:all": "lerna run test",
     "test:core": "lerna run test --scope=@teal/core",
     "test:css": "lerna run test --scope=@teal/css",
-    "test:reset": "lerna run test --scope=@teal/reset",
+    "test:reset": "lerna run test --scope=@teal/element",
     "test:ui": "lerna run test --scope=@teal/ui",
     "bootstrap": "lerna exec -- npm link"
   },
