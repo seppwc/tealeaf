@@ -1,0 +1,8 @@
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+  margin-block-start: 2rem;
+  margin-block-end: 2rem;
+  border-width: 1px;
+}
