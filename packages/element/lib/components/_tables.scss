@@ -1,0 +1,31 @@
+table {
+  border-collapse: collapse;
+  margin-bottom: 10px;
+  width: 100%;
+  table-layout: fixed;
+
+  & > thead {
+    border-bottom: 1px solid #dbdbdb;
+  }
+}
+
+td,
+th {
+  padding: 6px;
+  vertical-align: top;
+  word-wrap: break-word;
+}
+table caption,
+td,
+th {
+  text-align: left;
+}
+
+td {
+  display: table-cell;
+  vertical-align: inherit;
+}
+
+tbody tr:nth-child(2n) {
+  background-color: #efefef;
+}
