@@ -35,52 +35,36 @@ button:-moz-focusring,
 button,
 input[type="submit"],
 [data-as="button"] {
-  --tl-button-color: var(--color, #1f4b4b);
-  --tl-button-transition-time: var(--transition-time, 300ms);
-  --tl-button-transition-ease: var(--ease, none);
-  --tl-button-transition: var(--tl-button-transition-time)
-    var(--tl-button-transition-ease);
-
-  --tl-button-shadow: var(--shadow, none);
-  --tl-button-background: var(--bg, rgb(227, 227, 227));
-
-  --tl-button-padding-top: var(--pt, var(--tl-size-9, 0.65rem));
-  --tl-button-padding-left: var(--pl, var(--tl-size-12, 1.5rem));
-  --tl-button-padding-bottom: var(--pb, var(--tl-size-9, 0.65rem));
-  --tl-button-padding-right: var(--pr, var(--tl-size-12, 1.5rem));
-
-  --tl-button-margin-top: var(--mt, var(--tl-size-2, 0px));
-  --tl-button-margin-left: var(--ml, var(--tl-size-2, 0px));
-  --tl-button-margin-bottom: var(--mb, var(--tl-size-2, 0px));
-  --tl-button-margin-right: var(--mr, var(--tl-size-2, 0px));
-
-  --tl-button-cursor: var(--cursor, pointer);
-
-  --tl-button-radius-topleft: var(--rtl, var(--tl-radius-2, 0.25rem));
-  --tl-button-radius-topright: var(--rtr, var(--tl-radius-2, 0.25rem));
-  --tl-button-radius-bottomleft: var(--rbl, var(--tl-radius-2, 0.25rem));
-  --tl-button-radius-bottomright: var(--rbr, var(--tl-radius-2, 0.25rem));
-
   display: inline-block;
-  cursor: var(--tl-button-cursor);
-  margin: var(--tl-button-margin-top) var(--tl-button-margin-right)
-    var(--tl-button-margin-bottom) var(--tl-button-margin-left);
-  background: var(--tl-button-background);
+  cursor: pointer;
+  margin: 0.25rem;
+  background: rgb(227, 227, 227);
   border: none;
-  padding: var(--tl-button-padding-top) var(--tl-button-padding-right)
-    var(--tl-button-padding-bottom) var(--tl-button-padding-left);
-  color: var(--tl-button-color);
-  border-radius: var(--tl-button-radius-topleft)
-    var(--tl-button-radius-topright) var(--tl-button-radius-bottomright)
-    var(--tl-button-radius-bottomleft);
-  font-size: var(--tl-size-10);
-  box-shadow: var(--shadow);
+  padding: 0.65rem 1.5rem;
+  color: #1f4b4b;
+  border-radius: 0.25rem;
+
   outline: none;
   transition: all 200ms ease;
   text-decoration: none;
-  line-height: initial;
+  line-height: 1;
 
   &:focus {
     box-shadow: 0 0 2px 2px rgba(63, 193, 197, 1);
+  }
+
+  &:hover {
+    filter: brightness(0.9);
+  }
+
+  &:disabled,
+  &[data-disabled] {
+    cursor: not-allowed;
+    background: rgb(161, 161, 161);
+    color: rgb(255, 255, 255);
+
+    &:hover {
+      filter: none;
+    }
   }
 }
