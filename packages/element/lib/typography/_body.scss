@@ -12,6 +12,16 @@ p {
   margin-bottom: 1rem;
 }
 
+a {
+  text-decoration-style: dashed;
+  text-underline-offset: 0.19em;
+  color: #218e8e;
+
+  &:visited {
+    color: #6c44cd;
+  }
+}
+
 del {
 }
 s {
