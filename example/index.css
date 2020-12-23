@@ -1,4 +1,47 @@
+html {
+  scroll-behavior: smooth;
+}
+
+article {
+  padding: 50px 0;
+}
+
+.offset-heading {
+  color: rgb(52, 136, 129);
+  margin-left: -100px;
+}
+
 .container {
   margin: 100px auto;
   width: 900px;
+}
+
+.header {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  margin: 0 100px;
+}
+
+.header h1 {
+  font-size: 2rem;
+  color: #1e7e7e;
+}
+
+.header nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.header nav a {
+  text-decoration: none;
+}
+
+.header nav a:visited {
+  color: #1e7e7e;
+}
+
+.header nav a:active,
+.header nav a:focus {
+  color: #6c44cd;
 }

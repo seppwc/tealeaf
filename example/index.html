@@ -4,54 +4,103 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../node_modules/@teal/element/teal-element.css" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/@teal/element/teal-element.css"
+    />
     <link rel="stylesheet" href="./index.css" />
+  </head>
   <body>
-    <div class="container">
+    <header class="header">
+      <h1>@Teal/element</h1>
+      <nav>
+        <a href="#heading">Headings</a>
+        <a href="#buttons">Buttons</a>
+        <a href="#textandlinks">Texts and Links</a>
+        <a href="#lists">Lists</a>
+        <a href="#images">Images</a>
+        <a href="#address">Address</a>
+        <a href="#tables">Tables</a>
+      </nav>
+    </header>
+    <main class="container">
+      <article id="heading">
+        <h2 class="offset-heading">Headings</h2>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+      </article>
 
+      <hr />
+      <article id="buttons">
+        <h2 class="offset-heading">Buttons</h2>
+        <button>Button</button>
+        <a data-as="button" href="">Link</a>
+        <button disabled>Disabled</button>
+      </article>
+      <hr />
+      <article id="textandlinks">
+        <h2 class="offset-heading">Text and Links</h2>
+        <p>
+          <a href="">This is a Link</a> Lorem, ipsum dolor sit amet consectetur
+          <a href="/todo">in line link</a> adipisicing elit. Voluptatum animi
+          quidem ea, nisi veniam sit velit vitae. Similique eos molestias odio
+          perferendis velit consectetur temporibus optio amet incidunt aperiam?
+          Enim.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+          beatae illo officiis, adipisci laboriosam, vero, quo maiores eaque
+          mollitia sed debitis nam sit libero blanditiis a molestias delectus
+          dignissimos in!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+          beatae illo officiis, adipisci laboriosam, vero, quo maiores eaque
+          mollitia sed debitis nam sit libero blanditiis a molestias delectus
+          dignissimos in!
+        </p>
+      </article>
+      <hr />
+      <article id="lists">
+        <h2 class="offset-heading">Lists</h2>
+        <ul>
+          <li>Item one</li>
+          <li>Item two</li>
+          <li>Item three</li>
+          <li>Item four</li>
+        </ul>
 
-      <h1>Heading 1</h1>
-      <h2>Heading 2</h2>
-      <h3>Heading 3</h3>
-      <h4>Heading 4</h4>
-      <h5>Heading 5</h5>
-      <h6>Heading 6</h6>
-      <hr>
-      <div>
-      <button>Button</button>
-      <a data-as="button" href="">Link</a>
-      <button disabled>Disabled</button>
-      </div>
+        <ol>
+          <li>Item one</li>
+          <li>Item two</li>
+          <li>Item three</li>
+          <li>Item four</li>
+        </ol>
 
-      <a href="">This is a Link</a>
-      <p>Lorem, ipsum dolor sit amet consectetur <a href="/todo">in line link</a> adipisicing elit. Voluptatum animi quidem ea, nisi veniam sit velit vitae. Similique eos molestias odio perferendis velit consectetur temporibus optio amet incidunt aperiam? Enim.</p>
-      <ul>
-        <li>Item one</li>
-        <li>Item two</li>
-        <li>Item three</li>
-        <li>Item four</li>
-      </ul>
-
-       <ol>
-        <li>Item one</li>
-        <li>Item two</li>
-        <li>Item three</li>
-        <li>Item four</li>
-      </ol>
-
-      <dl>
-        <dt>Description list</dt>
-        <dd>Description Data</dd>
-        <dt>Description list</dt>
-        <dd>Description Data</dd>
-        <dt>Description list</dt>
-        <dd>Description Data</dd>
-      </dl>
-       <img src="https://picsum.photos/200" alt="random picture">
-       <img src="https://picsum.photos/200" alt="random picture">
-       <img src="https://picsum.photos/200" alt="random picture">
-
-       <address>
+        <dl>
+          <dt>Description list</dt>
+          <dd>Description Data</dd>
+          <dt>Description list</dt>
+          <dd>Description Data</dd>
+          <dt>Description list</dt>
+          <dd>Description Data</dd>
+        </dl>
+      </article>
+      <hr />
+      <article id="images">
+        <h2 class="offset-heading">Images</h2>
+        <img src="https://picsum.photos/200" alt="random picture" />
+        <img src="https://picsum.photos/200" alt="random picture" />
+        <img src="https://picsum.photos/200" alt="random picture" />
+      </article>
+      <hr />
+      <article id="address">
+        <h2 class="offset-heading">Addresses</h2>
+        <address>
           <h6>Address</h6>
           <span>342 Evergreen Terrace</span>
           <span>Springfield</span>
@@ -60,49 +109,49 @@
           <a href="mailto:maillmail.hotmail.com">maillmail.hotmail.com</a>
           <a href="tel:01204 020204">01204 020204</a>
           <a href="sms:5555 555555">5555 555555</a>
-       </address>
-
-       <table>
-         <thead >
+        </address>
+      </article>
+      <hr />
+      <article id="tables">
+        <h2 class="offset-heading">Tables</h2>
+        <table>
+          <thead>
             <tr>
               <th scope="col">ID #</th>
               <th scope="col">First Name</th>
               <th scope="col">last Name</th>
               <th scope="col">Email</th>
             </tr>
-         </thead>
-         <tbody>
-           <tr>
+          </thead>
+          <tbody>
+            <tr>
               <th scope="row">149479J</th>
               <td>Sepp</td>
               <td>Wikramaratna-Clarke</td>
               <td>info@builtbysepp.dev</td>
-           </tr>
+            </tr>
             <tr>
               <th scope="row">232333E</th>
               <td>Lizzie</td>
               <td>Wikramaratna-Clarke</td>
               <td>lizze@builtbysepp.dev</td>
-           </tr>
-              <tr>
+            </tr>
+            <tr>
               <th scope="row">344224H</th>
               <td>Henry</td>
               <td>Wikramaratna-Clarke</td>
               <td>henry@builtbysepp.dev</td>
-           </tr>
             </tr>
-              <tr>
+            <tr>
               <th scope="row">432163E</th>
               <td>Edward</td>
               <td>Wikramaratna-Clarke</td>
               <td>ed@builtbysepp.dev</td>
-           </tr>
-         </tbody>
-       </table>
-    </div>
-
-   
-
+            </tr>
+          </tbody>
+        </table>
+      </article>
+    </main>
     <script src="./index.js"></script>
   </body>
 </html>
