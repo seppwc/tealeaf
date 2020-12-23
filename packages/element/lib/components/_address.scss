@@ -1,0 +1,22 @@
+address {
+  font-style: normal;
+  line-height: 1.2;
+  margin: 1.2rem 0;
+  & > * {
+    display: block;
+    margin: 0;
+    text-decoration: none;
+  }
+
+  & > a[href^="mailto\:"]:before {
+    content: "✉ ";
+  }
+
+  & > a[href^="tel\:"]:before {
+    content: "📞 ";
+  }
+
+  & > a[href^="sms\:"]:before {
+    content: "💬 ";
+  }
+}
