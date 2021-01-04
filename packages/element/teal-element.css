@@ -227,50 +227,106 @@ button:-moz-focusring,
 
 button,
 input[type=submit],
+input[type=button],
 [data-as=button] {
   display: inline-block;
   cursor: pointer;
   margin: 0.25rem;
   background: #e3e3e3;
-  border: none;
+  border: 1px solid #dddddd;
   padding: 0.65rem 1.5rem;
   color: #1f4b4b;
   border-radius: 0.25rem;
   outline: none;
-  transition: all 200ms ease;
   text-decoration: none;
   line-height: 1;
 }
 button:visited,
 input[type=submit]:visited,
+input[type=button]:visited,
 [data-as=button]:visited {
   color: #1f4b4b;
 }
 button:focus,
 input[type=submit]:focus,
+input[type=button]:focus,
 [data-as=button]:focus {
-  box-shadow: 0 0 2px 2px #3fc1c5;
+  border: 1px solid #3fc1c5;
+  box-shadow: 0 0 2px 1px #3bb3b8;
 }
 button:hover,
 input[type=submit]:hover,
+input[type=button]:hover,
 [data-as=button]:hover {
-  filter: brightness(0.9);
+  filter: brightness(0.97);
 }
 button:disabled, button[data-disabled],
 input[type=submit]:disabled,
 input[type=submit][data-disabled],
+input[type=button]:disabled,
+input[type=button][data-disabled],
 [data-as=button]:disabled,
 [data-as=button][data-disabled] {
   cursor: not-allowed;
   background: #a1a1a1;
+  border: 1px solid #cacaca;
   color: white;
 }
 button:disabled:hover, button[data-disabled]:hover,
 input[type=submit]:disabled:hover,
 input[type=submit][data-disabled]:hover,
+input[type=button]:disabled:hover,
+input[type=button][data-disabled]:hover,
 [data-as=button]:disabled:hover,
 [data-as=button][data-disabled]:hover {
   filter: none;
+}
+
+form {
+  padding: 1.25rem;
+}
+form > * {
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+}
+
+input[type=text],
+input[type=search],
+textarea,
+select,
+input[list] {
+  width: calc(100% - 0.5rem - 2px);
+  padding: 0;
+  padding-left: 0.5rem;
+  border: 1px solid #b5c0c6;
+  height: 2rem;
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+textarea {
+  padding-top: 0.5rem;
+  resize: vertical;
+}
+
+select {
+  width: 100%;
+}
+
+input[type=search] {
+  width: 100%;
+  outline-offset: 0;
+}
+
+fieldset {
+  margin: 0;
+  width: calc(100% - 1.5rem - 2px);
+  border: 1px solid #b5c0c6;
+  border-radius: 0.25rem;
+  padding-bottom: 1.5rem;
 }
 
 ul,
