@@ -46,3 +46,17 @@ article {
 .header nav a:focus {
   color: #6c44cd;
 }
+
+.toggle {
+  background: #2bb9b9;
+  border: none;
+  color: whitesmoke;
+  padding: 0.5rem;
+  border-radius: 9999px;
+  display: grid;
+  place-content: center;
+  position: fixed;
+  display: absolute;
+  bottom: 50px;
+  right: 50px;
+}
