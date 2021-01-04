@@ -5,12 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link
+      id="stylesheet"
       rel="stylesheet"
       href="../node_modules/@teal/element/teal-element.css"
     />
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
+    <button id="toggle" class="toggle">
+      <svg
+        id="add"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        width="30"
+        height="30"
+        xmlns="http://www.w3.org/2000/svg"
+        style="display: none"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+        ></path>
+      </svg>
+      <svg
+        id="remove"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+        width="30"
+        height="30"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+        ></path>
+      </svg>
+    </button>
     <header class="header">
       <h1>@Teal/element</h1>
       <nav>
@@ -21,6 +57,7 @@
         <a href="#images">Images</a>
         <a href="#address">Address</a>
         <a href="#tables">Tables</a>
+        <a href="#forms">Forms</a>
       </nav>
     </header>
     <main class="container">
@@ -150,6 +187,50 @@
             </tr>
           </tbody>
         </table>
+      </article>
+      <article id="forms">
+        <h2 class="offset-heading">Forms</h2>
+        <form>
+          <label for="textinput">text inputs</label>
+          <input type="text" />
+          <label for="radios">radio</label>
+          <input type="radio" />
+          <input type="radio" />
+          <label for="checkboxes">checkboxes</label>
+          <input type="checkbox" />
+          <input type="checkbox" />
+
+          <label for="search">search</label>
+          <input type="search" name="" id="" />
+          <label for="select">select</label>
+          <select name="" id="">
+            <option value="one">one</option>
+            <option value="two">two</option>
+            <option value="three">three</option>
+          </select>
+          <label for="textarea">textarea</label>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+
+          <fieldset>
+            <legend>Fieldset/Legend</legend>
+            <label for="">first name</label>
+            <input type="text" />
+            <label for="">last name</label>
+            <input type="text" />
+            <label for="">datalist</label>
+            <input list="numbers" name="number" />
+            <datalist id="numbers">
+              <option value="one">one</option>
+              <option value="two">two</option>
+              <option value="three">three</option>
+              <option value="four">four</option>
+            </datalist>
+          </fieldset>
+
+          <label for="buttons">buttons</label>
+          <input type="submit" />
+          <input type="button" value="Button" />
+        </form>
       </article>
     </main>
     <script src="./index.js"></script>

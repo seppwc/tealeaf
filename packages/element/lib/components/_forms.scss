@@ -1,0 +1,50 @@
+form {
+  padding: 1.25rem;
+
+  & > * {
+    margin: 0 auto;
+  }
+}
+
+label {
+  display: block;
+}
+
+input[type="text"],
+input[type="search"],
+textarea,
+select,
+input[list] {
+  // display: flex;
+  width: calc(100% - 0.5rem - 2px);
+  padding: 0;
+  padding-left: 0.5rem;
+
+  border: 1px solid #b5c0c6;
+  height: 2rem;
+  border-radius: 0.25rem;
+
+  margin-bottom: 0.5rem;
+}
+
+textarea {
+  padding-top: 0.5rem;
+  resize: vertical;
+}
+
+select {
+  width: 100%;
+}
+
+input[type="search"] {
+  width: 100%;
+  outline-offset: 0;
+}
+
+fieldset {
+  margin: 0;
+  width: calc(100% - 1.5rem - 2px);
+  border: 1px solid #b5c0c6;
+  border-radius: 0.25rem;
+  padding-bottom: 1.5rem;
+}
