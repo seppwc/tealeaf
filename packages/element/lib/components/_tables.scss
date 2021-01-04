@@ -5,7 +5,10 @@ table {
   table-layout: fixed;
 
   & > thead {
-    border-bottom: 1px solid #dbdbdb;
+    --tl-thead-bordercolor: #259e9e;
+    --tl-thead-color: #165f5f;
+    color: var(--tl-thead-color);
+    border-bottom: 2px solid var(--tl-thead-bordercolor);
   }
 }
 
@@ -26,6 +29,7 @@ td {
   vertical-align: inherit;
 }
 
-tbody tr:nth-child(2n) {
-  background-color: #efefef;
+tbody tr {
+  --tl-tr-partition: #ced5d9;
+  border-bottom: 1px solid var(--tl-tr-partition);
 }
