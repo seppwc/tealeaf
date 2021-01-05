@@ -262,6 +262,7 @@ input[type=button]:hover,
 }
 
 button:disabled,
+input[type=submit]:disabled,
 input[type=button]:disabled,
 a[role=button]:not([href]),
 a[role=button][href=""] {
@@ -272,6 +273,7 @@ a[role=button][href=""] {
   color: white;
 }
 button:disabled:hover,
+input[type=submit]:disabled:hover,
 input[type=button]:disabled:hover,
 a[role=button]:not([href]):hover,
 a[role=button][href=""]:hover {
