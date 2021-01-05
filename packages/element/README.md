@@ -1,11 +1,11 @@
-# `@teal/reset`
+# `@teal/elements`
 
 > TODO: description
 
 ## Usage
 
 ```
-const reset = require('@teal/reset');
+
 
 // TODO: DEMONSTRATE API
 ```

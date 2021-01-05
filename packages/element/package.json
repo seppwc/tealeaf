@@ -1,17 +1,17 @@
 {
-  "name": "@teal/element",
+  "name": "@teal/elements",
   "version": "0.0.0",
   "description": "> TODO: description",
   "author": "phl3bas <phl3bas87@gmail.com>",
   "homepage": "https://github.com/Phl3bas/Teal#readme",
   "license": "MIT",
-  "main": "teal-element.css",
+  "main": "teal-elements.css",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
   },
   "files": [
-    "teal-element.css"
+    "teal-elements.css"
   ],
   "publishConfig": {
     "access": "public"
@@ -22,7 +22,7 @@
   },
   "scripts": {
     "build": "ts-node ./lib/index.ts",
-    "build:watch": "sass --no-source-map --watch lib/index.scss:teal-element.css --style=compressed",
+    "build:watch": "sass --no-source-map --watch lib/index.scss:teal-elements.css --style=compressed",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
