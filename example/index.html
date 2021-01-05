@@ -12,14 +12,51 @@
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
+    <nav class="mobile_nav">
+      <div id="menu_button">
+        <svg
+          width="40"
+          height="40"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h8m-8 6h16"
+          ></path>
+        </svg>
+      </div>
+      <div class="menu_header">
+        <h1>@Teal/Element</h1>
+      </div>
+      <div class="social">
+        <a href="https://github.com/Phl3bas/Teal"
+          ><svg
+            width="30"
+            height="30"
+            viewBox="0 0 84 80"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M41.9672 6.25898C21.6809 6.25077 5.25 22.6734 5.25 42.9434C5.25 58.9723 15.5285 72.5976 29.843 77.6016C31.7707 78.0855 31.4754 76.7156 31.4754 75.7805V69.423C20.3438 70.7273 19.8926 63.3609 19.1461 62.1305C17.6367 59.5547 14.0684 58.8984 15.1348 57.668C17.6695 56.3637 20.2535 57.9961 23.2477 62.4176C25.4133 65.625 29.6379 65.0836 31.7789 64.5504C32.2465 62.6226 33.2473 60.9 34.6254 59.5629C23.0918 57.4957 18.2848 50.4574 18.2848 42.0902C18.2848 38.0297 19.6219 34.2973 22.2469 31.2867C20.5734 26.3238 22.4027 22.0746 22.6488 21.443C27.4148 21.0164 32.3695 24.8555 32.7551 25.159C35.4621 24.4289 38.5547 24.0433 42.0164 24.0433C45.4945 24.0433 48.5953 24.4453 51.327 25.1836C52.2539 24.4781 56.8477 21.1805 61.2773 21.5824C61.5152 22.2141 63.3035 26.3648 61.7285 31.2621C64.3863 34.2809 65.7398 38.0461 65.7398 42.1148C65.7398 50.4984 60.9 57.5449 49.3336 59.5793C50.3243 60.5536 51.1109 61.7155 51.6475 62.9972C52.1842 64.2789 52.46 65.6546 52.459 67.0441V76.2726C52.5246 77.0109 52.459 77.741 53.6895 77.741C68.2172 72.8437 78.6762 59.1199 78.6762 42.9516C78.6762 22.6734 62.2371 6.25898 41.9672 6.25898V6.25898Z"
+              fill="white"
+            />
+          </svg>
+        </a>
+      </div>
+    </nav>
     <button id="toggle" class="toggle">
       <svg
         id="add"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
-        width="30"
-        height="30"
+        width="40"
+        height="40"
         xmlns="http://www.w3.org/2000/svg"
         style="display: none"
       >
@@ -36,8 +73,8 @@
         stroke="currentColor"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
-        width="30"
-        height="30"
+        width="40"
+        height="40"
       >
         <path
           stroke-linecap="round"
@@ -48,7 +85,25 @@
       </svg>
     </button>
     <header class="header">
-      <h1>@Teal/element</h1>
+      <div class="header_container">
+        <h1>@Teal/element</h1>
+        <svg
+          id="close"
+          fill="none"
+          stroke="currentColor"
+          height="40"
+          width="40"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          ></path>
+        </svg>
+      </div>
       <nav>
         <a href="#heading">Headings</a>
         <a href="#buttons">Buttons</a>
@@ -60,6 +115,21 @@
         <a href="#forms">Forms</a>
         <a href="#Blockquotes">Blockquotes</a>
       </nav>
+      <div class="social">
+        <a href="https://github.com/Phl3bas/Teal"
+          ><svg
+            width="30"
+            height="30"
+            viewBox="0 0 84 80"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M41.9672 6.25898C21.6809 6.25077 5.25 22.6734 5.25 42.9434C5.25 58.9723 15.5285 72.5976 29.843 77.6016C31.7707 78.0855 31.4754 76.7156 31.4754 75.7805V69.423C20.3438 70.7273 19.8926 63.3609 19.1461 62.1305C17.6367 59.5547 14.0684 58.8984 15.1348 57.668C17.6695 56.3637 20.2535 57.9961 23.2477 62.4176C25.4133 65.625 29.6379 65.0836 31.7789 64.5504C32.2465 62.6226 33.2473 60.9 34.6254 59.5629C23.0918 57.4957 18.2848 50.4574 18.2848 42.0902C18.2848 38.0297 19.6219 34.2973 22.2469 31.2867C20.5734 26.3238 22.4027 22.0746 22.6488 21.443C27.4148 21.0164 32.3695 24.8555 32.7551 25.159C35.4621 24.4289 38.5547 24.0433 42.0164 24.0433C45.4945 24.0433 48.5953 24.4453 51.327 25.1836C52.2539 24.4781 56.8477 21.1805 61.2773 21.5824C61.5152 22.2141 63.3035 26.3648 61.7285 31.2621C64.3863 34.2809 65.7398 38.0461 65.7398 42.1148C65.7398 50.4984 60.9 57.5449 49.3336 59.5793C50.3243 60.5536 51.1109 61.7155 51.6475 62.9972C52.1842 64.2789 52.46 65.6546 52.459 67.0441V76.2726C52.5246 77.0109 52.459 77.741 53.6895 77.741C68.2172 72.8437 78.6762 59.1199 78.6762 42.9516C78.6762 22.6734 62.2371 6.25898 41.9672 6.25898V6.25898Z"
+              fill="#165f5f"
+            />
+          </svg>
+        </a>
+      </div>
     </header>
     <main class="container">
       <article id="heading">
@@ -247,7 +317,7 @@
           </p>
         </blockquote>
         <blockquote>
-          <p>I like big butts and i can not lie</p>
+          <p>I like big butts and I can not lie</p>
           <footer>The Dalai Lama</footer>
         </blockquote>
       </article>
