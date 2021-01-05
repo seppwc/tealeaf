@@ -13,7 +13,9 @@
     "test:css": "lerna run test --scope=@teal/css",
     "test:reset": "lerna run test --scope=@teal/element",
     "test:ui": "lerna run test --scope=@teal/ui",
-    "bootstrap": "lerna exec -- npm link"
+    "bootstrap": "lerna exec -- npm link",
+    "link-packages": "npm link @teal/core && npm link @teal/element && npm link @teal/css && npm link @teal/ui",
+    "bootstrap:init": "npm-run-all bootstrap link-packages"
   },
   "devDependencies": {
     "lerna": "^3.22.1",
