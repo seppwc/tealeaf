@@ -228,7 +228,7 @@ button:-moz-focusring,
 button,
 input[type=submit],
 input[type=button],
-[data-as=button] {
+[role=button] {
   display: inline-block;
   cursor: pointer;
   margin: 0.25rem;
@@ -244,41 +244,37 @@ input[type=button],
 button:visited,
 input[type=submit]:visited,
 input[type=button]:visited,
-[data-as=button]:visited {
+[role=button]:visited {
   color: #1f4b4b;
 }
 button:focus,
 input[type=submit]:focus,
 input[type=button]:focus,
-[data-as=button]:focus {
-  border: 1px solid #3fc1c5;
-  box-shadow: 0 0 2px 1px #3bb3b8;
+[role=button]:focus {
+  border: 1px solid #2bb9b9;
+  box-shadow: 0 0 0px 1px #2bb9b9;
 }
 button:hover,
 input[type=submit]:hover,
 input[type=button]:hover,
-[data-as=button]:hover {
+[role=button]:hover {
   filter: brightness(0.97);
 }
-button:disabled, button[data-disabled],
-input[type=submit]:disabled,
-input[type=submit][data-disabled],
+
+button:disabled,
 input[type=button]:disabled,
-input[type=button][data-disabled],
-[data-as=button]:disabled,
-[data-as=button][data-disabled] {
+a[role=button]:not([href]),
+a[role=button][href=""] {
   cursor: not-allowed;
-  background: #a1a1a1;
-  border: 1px solid #cacaca;
+  pointer-events: none;
+  background: #a7a7a7;
+  border: 1px solid #959595;
   color: white;
 }
-button:disabled:hover, button[data-disabled]:hover,
-input[type=submit]:disabled:hover,
-input[type=submit][data-disabled]:hover,
+button:disabled:hover,
 input[type=button]:disabled:hover,
-input[type=button][data-disabled]:hover,
-[data-as=button]:disabled:hover,
-[data-as=button][data-disabled]:hover {
+a[role=button]:not([href]):hover,
+a[role=button][href=""]:hover {
   filter: none;
 }
 
