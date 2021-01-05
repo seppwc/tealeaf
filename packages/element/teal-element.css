@@ -167,28 +167,28 @@ h6 {
 }
 
 h1 {
-  font-size: var(--tl-fontsize, var(--tl-size-15, 3.87rem));
+  font-size: var(--tl-h1-fontsize, 3.87rem);
   margin: 0.67em 0;
 }
 
 h2 {
-  font-size: var(--tl-fontsize, var(--tl-size-14, 2.5rem));
+  font-size: var(--tl-2-fontsize, 2.5rem);
 }
 
 h3 {
-  font-size: var(--tl-fontsize, var(--tl-size-13, 2rem));
+  font-size: var(--tl-h3-fontsize, 2rem);
 }
 
 h4 {
-  font-size: var(--tl-fontsize, var(--tl-size-12, 1.5rem));
+  font-size: var(--tl-h4-fontsize, 1.5rem);
 }
 
 h5 {
-  font-size: var(--tl-fontsize, var(--tl-size-11, 1.25rem));
+  font-size: var(--tl-h5-fontsize, 1.25rem);
 }
 
 h6 {
-  font-size: var(--tl-fontsize, var(--tl-size-10, 1rem));
+  font-size: var(--tl-h6-fontsize, 1rem);
 }
 
 button,
@@ -424,8 +424,8 @@ tbody tr {
 }
 
 blockquote {
-  --tl-leftquote: initial;
-  --tl-rightquote: initial;
+  --tl-blockquote-leftquote: initial;
+  --tl-blockquote-rightquote: initial;
   --tl-blockquote-highlight: #259e9e;
   --tl-blockquote-highlight-width: 0.25rem;
   padding: 1.5rem 2.5rem;
@@ -452,14 +452,14 @@ blockquote p {
   color: #364046;
 }
 blockquote p::before {
-  display: var(--tl-leftquote);
+  display: var(--tl-blockquote-leftquotee);
   content: url('data:image/svg+xml;utf8,<svg width="43" height="35" viewBox="0 0 43 35" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.5469 0.664062L20 5.72656C15.6406 11.6797 13.3906 18.1016 13.25 24.9922V34.5547H0.3125V26.3984C0.3125 21.6172 1.4375 16.8828 3.6875 12.1953C5.98438 7.50781 8.9375 3.66406 12.5469 0.664062ZM34.6953 0.664062L42.1484 5.72656C37.7891 11.6797 35.5391 18.1016 35.3984 24.9922V34.5547H22.4609V26.3984C22.4609 21.6172 23.5859 16.8828 25.8359 12.1953C28.1328 7.50781 31.0859 3.66406 34.6953 0.664062Z" fill="%23CED5D9"/></svg>');
   position: absolute;
   top: -1rem;
   left: 0.75rem;
 }
 blockquote p::after {
-  display: var(--tl-rightquote);
+  display: var(--tl-blockquote-rightquote);
   content: url('data:image/svg+xml;utf8,<svg width="43" height="35" viewBox="0 0 43 35" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.22656 34.4531L0.84375 29.3906C5.20312 23.2969 7.45312 16.875 7.59375 10.125V0H20.4609V9.14062C20.4141 13.8281 19.2422 18.5156 16.9453 23.2031C14.6953 27.8438 11.7891 31.5938 8.22656 34.4531ZM29.8125 34.4531L22.4297 29.3906C26.7891 23.2969 29.0391 16.875 29.1797 10.125V0H42.0469V9.14062C42 13.8281 40.8281 18.5156 38.5312 23.2031C36.2812 27.8438 33.375 31.5938 29.8125 34.4531Z" fill="%23CED5D9"/></svg>');
   position: absolute;
   bottom: -1.5rem;
