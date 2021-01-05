@@ -22,7 +22,7 @@
   },
   "scripts": {
     "build": "ts-node ./lib/index.ts",
-    "build:watch": "sass --no-source-map --watch lib/index.scss teal-element.css",
+    "build:watch": "sass --no-source-map --watch lib/index.scss:teal-element.css --style=compressed",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
