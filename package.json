@@ -3,18 +3,18 @@
   "private": true,
   "scripts": {
     "start": "parcel ./example/index.html",
-    "start:core": "npm-run-all --parallel start build:core",
+    "start:tokens": "npm-run-all --parallel start build:tokens",
     "start:elements": "npm-run-all --parallel start build-w:elements",
-    "build:core": "lerna run build --scope=@teal/core",
+    "build:tokens": "lerna run build --scope=@teal/tokens",
     "build:elements": "lerna run build --scope=@teal/elements",
     "build-w:elements": "lerna run build:watch --scope=@teal/elements",
     "test:all": "lerna run test",
-    "test:core": "lerna run test --scope=@teal/core",
+    "test:tokens": "lerna run test --scope=@teal/tokens",
     "test:css": "lerna run test --scope=@teal/css",
     "test:reset": "lerna run test --scope=@teal/elements",
     "test:ui": "lerna run test --scope=@teal/ui",
     "bootstrap": "lerna exec -- npm link",
-    "link-packages": "npm link @teal/core && npm link @teal/elements && npm link @teal/css && npm link @teal/ui",
+    "link-packages": "npm link @teal/tokens && npm link @teal/elements && npm link @teal/css && npm link @teal/ui",
     "bootstrap:init": "npm-run-all bootstrap link-packages"
   },
   "devDependencies": {

@@ -1,18 +1,18 @@
 {
-  "name": "@teal/core",
+  "name": "@teal/tokens",
   "version": "0.0.0",
   "description": "> TODO: description",
   "author": "phl3bas <phl3bas87@gmail.com>",
   "homepage": "https://github.com/Phl3bas/Teal#readme",
   "license": "MIT",
-  "main": "teal-core.css",
+  "main": "teal-tokens.css",
   "types": "/types",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
   },
   "files": [
-    "teal-core.css"
+    "teal-tokens.css"
   ],
   "publishConfig": {
     "access": "public"

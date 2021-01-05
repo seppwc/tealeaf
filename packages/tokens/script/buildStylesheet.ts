@@ -13,4 +13,4 @@ const values = [
   BuildToCSSString(Radius),
 ];
 
-writeFile("teal-core.css", WrapWithRoot(values), () => {});
+writeFile("teal-tokens.css", WrapWithRoot(values), () => {});
