@@ -35,7 +35,7 @@ button:-moz-focusring,
 button,
 input[type="submit"],
 input[type="button"],
-[data-as="button"] {
+[role="button"] {
   display: inline-block;
   cursor: pointer;
   margin: 0.25rem;
@@ -55,23 +55,26 @@ input[type="button"],
   }
 
   &:focus {
-    border: 1px solid rgba(63, 193, 197, 1);
-    box-shadow: 0 0 2px 1px rgb(59, 179, 184);
+    border: 1px solid #2bb9b9;
+    box-shadow: 0 0 0px 1px #2bb9b9;
   }
 
   &:hover {
     filter: brightness(0.97);
   }
+}
 
-  &:disabled,
-  &[data-disabled] {
-    cursor: not-allowed;
-    background: rgb(161, 161, 161);
-    border: 1px solid rgb(202, 202, 202);
-    color: rgb(255, 255, 255);
+button:disabled,
+input[type="button"]:disabled,
+a[role="button"]:not([href]),
+a[role="button"][href=""] {
+  cursor: not-allowed;
+  pointer-events: none;
+  background: #a7a7a7;
+  border: 1px solid #959595;
+  color: rgb(255, 255, 255);
 
-    &:hover {
-      filter: none;
-    }
+  &:hover {
+    filter: none;
   }
 }
