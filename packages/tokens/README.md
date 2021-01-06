@@ -17,7 +17,7 @@ tokens provides the user with a stylesheet containing a set of design tokens (cs
 3. eases
 4. radius'
 5. box shadows
-6. gradients
+6. gradients (to be added)
 
 ### sets and scales
 
@@ -102,4 +102,31 @@ eg
 
 `--tl-ease-circ-inout`
 
-### 4. radius' ()
+### 4. radius' (named-set)
+
+We provide a named set of border radius, that conform to the reset for the design system scalings
+
+token naming format goes as follows
+
+`--tl-radius-[xs/sm/md/lg/xl/2xl/3xl/round]`
+
+eg
+
+`--tl-radius-none`
+
+`--tl-radius-md`
+
+`--tl-radius-round`
+
+### 4. box-shadows (scale)
+
+Box shadows are reguarly used in modern web design to aid providing visual heirarcy and depth within a page.
+
+Teal provides a curated collection of box shadows which have had inspiration drawn from my design systems and sites.
+
+token naming format goes as follows
+
+`--tl-shadow-[0-8]`
+`--tl-insetshadow-[1-4]`
+
+### 5 Gradients (to be included)
