@@ -12,7 +12,10 @@
     "test": "__tests__"
   },
   "files": [
-    "teal-tokens.css"
+    "teal-tokens.css",
+    "LICENCE",
+    "README.md",
+    "package.json"
   ],
   "publishConfig": {
     "access": "public"
