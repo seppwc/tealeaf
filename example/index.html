@@ -7,6 +7,11 @@
     <link
       id="stylesheet"
       rel="stylesheet"
+      href="../node_modules/@teal/tokens/teal-tokens.css"
+    />
+    <link
+      id="stylesheet"
+      rel="stylesheet"
       href="../node_modules/@teal/elements/teal-elements.css"
     />
     <link rel="stylesheet" href="./index.css" />
@@ -31,7 +36,7 @@
         </svg>
       </div>
       <div class="menu_header">
-        <h1>@Teal/Element</h1>
+        <img src="../assets/logo-whitetext.svg" alt="logo" />
       </div>
       <div class="social">
         <a href="https://github.com/Phl3bas/Teal"
@@ -49,44 +54,11 @@
         </a>
       </div>
     </nav>
-    <button id="toggle" class="toggle">
-      <svg
-        id="add"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        width="40"
-        height="40"
-        xmlns="http://www.w3.org/2000/svg"
-        style="display: none"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-        ></path>
-      </svg>
-      <svg
-        id="remove"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-        width="40"
-        height="40"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-        ></path>
-      </svg>
-    </button>
+
     <header class="header">
       <div class="header_container">
-        <h1>@Teal/element</h1>
+        <img src="../assets/logo-blacktext.svg" alt="logo" />
+
         <svg
           id="close"
           fill="none"
@@ -104,34 +76,1203 @@
           ></path>
         </svg>
       </div>
-      <nav>
-        <a href="#heading">Headings</a>
-        <a href="#buttons">Buttons</a>
-        <a href="#textandlinks">Texts and Links</a>
-        <a href="#lists">Lists</a>
-        <a href="#images">Images</a>
-        <a href="#address">Address</a>
-        <a href="#tables">Tables</a>
-        <a href="#forms">Forms</a>
-        <a href="#Blockquotes">Blockquotes</a>
-      </nav>
-      <div class="social">
-        <a href="https://github.com/Phl3bas/Teal"
-          ><svg
-            width="30"
-            height="30"
-            viewBox="0 0 84 80"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M41.9672 6.25898C21.6809 6.25077 5.25 22.6734 5.25 42.9434C5.25 58.9723 15.5285 72.5976 29.843 77.6016C31.7707 78.0855 31.4754 76.7156 31.4754 75.7805V69.423C20.3438 70.7273 19.8926 63.3609 19.1461 62.1305C17.6367 59.5547 14.0684 58.8984 15.1348 57.668C17.6695 56.3637 20.2535 57.9961 23.2477 62.4176C25.4133 65.625 29.6379 65.0836 31.7789 64.5504C32.2465 62.6226 33.2473 60.9 34.6254 59.5629C23.0918 57.4957 18.2848 50.4574 18.2848 42.0902C18.2848 38.0297 19.6219 34.2973 22.2469 31.2867C20.5734 26.3238 22.4027 22.0746 22.6488 21.443C27.4148 21.0164 32.3695 24.8555 32.7551 25.159C35.4621 24.4289 38.5547 24.0433 42.0164 24.0433C45.4945 24.0433 48.5953 24.4453 51.327 25.1836C52.2539 24.4781 56.8477 21.1805 61.2773 21.5824C61.5152 22.2141 63.3035 26.3648 61.7285 31.2621C64.3863 34.2809 65.7398 38.0461 65.7398 42.1148C65.7398 50.4984 60.9 57.5449 49.3336 59.5793C50.3243 60.5536 51.1109 61.7155 51.6475 62.9972C52.1842 64.2789 52.46 65.6546 52.459 67.0441V76.2726C52.5246 77.0109 52.459 77.741 53.6895 77.741C68.2172 72.8437 78.6762 59.1199 78.6762 42.9516C78.6762 22.6734 62.2371 6.25898 41.9672 6.25898V6.25898Z"
-              fill="#165f5f"
-            />
-          </svg>
-        </a>
+      <div class="header_navs">
+        <hr />
+        <h2>@Teal/tokens</h2>
+        <nav>
+          <a id="overview" href="#tokens">Overview</a>
+          <a href="#palette">Palette</a>
+          <a href="#sizes">Sizing</a>
+          <a href="#radius">Radius</a>
+          <a href="#eases">Eases</a>
+          <a href="#shadows">Shadows</a>
+          <a href="#gradients">Gradients</a>
+        </nav>
+        <hr />
+        <h2>@Teal/elements</h2>
+        <nav>
+          <a id="overview" href="#elements">Overview</a>
+          <a href="#heading">Headings</a>
+          <a href="#buttons">Buttons</a>
+          <a href="#textandlinks">Texts and Links</a>
+          <a href="#lists">Lists</a>
+          <a href="#images">Images</a>
+          <a href="#address">Address</a>
+          <a href="#tables">Tables</a>
+          <a href="#forms">Forms</a>
+          <a href="#Blockquotes">Blockquotes</a>
+        </nav>
+        <div class="social">
+          <a href="https://github.com/Phl3bas/Teal"
+            ><svg
+              width="30"
+              height="30"
+              viewBox="0 0 84 80"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M41.9672 6.25898C21.6809 6.25077 5.25 22.6734 5.25 42.9434C5.25 58.9723 15.5285 72.5976 29.843 77.6016C31.7707 78.0855 31.4754 76.7156 31.4754 75.7805V69.423C20.3438 70.7273 19.8926 63.3609 19.1461 62.1305C17.6367 59.5547 14.0684 58.8984 15.1348 57.668C17.6695 56.3637 20.2535 57.9961 23.2477 62.4176C25.4133 65.625 29.6379 65.0836 31.7789 64.5504C32.2465 62.6226 33.2473 60.9 34.6254 59.5629C23.0918 57.4957 18.2848 50.4574 18.2848 42.0902C18.2848 38.0297 19.6219 34.2973 22.2469 31.2867C20.5734 26.3238 22.4027 22.0746 22.6488 21.443C27.4148 21.0164 32.3695 24.8555 32.7551 25.159C35.4621 24.4289 38.5547 24.0433 42.0164 24.0433C45.4945 24.0433 48.5953 24.4453 51.327 25.1836C52.2539 24.4781 56.8477 21.1805 61.2773 21.5824C61.5152 22.2141 63.3035 26.3648 61.7285 31.2621C64.3863 34.2809 65.7398 38.0461 65.7398 42.1148C65.7398 50.4984 60.9 57.5449 49.3336 59.5793C50.3243 60.5536 51.1109 61.7155 51.6475 62.9972C52.1842 64.2789 52.46 65.6546 52.459 67.0441V76.2726C52.5246 77.0109 52.459 77.741 53.6895 77.741C68.2172 72.8437 78.6762 59.1199 78.6762 42.9516C78.6762 22.6734 62.2371 6.25898 41.9672 6.25898V6.25898Z"
+                fill="#165f5f"
+              />
+            </svg>
+          </a>
+        </div>
       </div>
     </header>
     <main class="container">
+      <article>
+        <h2 class="offset-heading" id="tokens">@Teal/tokens</h2>
+        <h3 class="offset-heading">Overview</h3>
+      </article>
+
+      <article id="palette">
+        <h2 class="offset-heading">Palette</h2>
+
+        <div class="grid col-3" style="--size: 30px">
+          <h4>Red</h4>
+          <div class="row-span:-1">
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-red-000)"
+            >
+              000
+            </div>
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-red-100)"
+            >
+              100
+            </div>
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-red-200)"
+            >
+              200
+            </div>
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-red-300)"
+            >
+              300
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-red-400)">
+              400
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-red-500)">
+              500
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-red-600)">
+              600
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-red-700)">
+              700
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-red-800)">
+              800
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-red-900)">
+              900
+            </div>
+          </div>
+          <h4>Pink</h4>
+          <div class="row-span:-1">
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-pink-000)"
+            >
+              000
+            </div>
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-pink-100)"
+            >
+              100
+            </div>
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-pink-200)"
+            >
+              200
+            </div>
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-pink-300)"
+            >
+              300
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-pink-400)">
+              400
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-pink-500)">
+              500
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-pink-600)">
+              600
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-pink-700)">
+              700
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-pink-800)">
+              800
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-pink-900)">
+              900
+            </div>
+          </div>
+          <h4>Purple</h4>
+          <div class="row-span:-1">
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-purple-000)"
+            >
+              000
+            </div>
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-purple-100)"
+            >
+              100
+            </div>
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-purple-200)"
+            >
+              200
+            </div>
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-purple-300)"
+            >
+              300
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-purple-400)">
+              400
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-purple-500)">
+              500
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-purple-600)">
+              600
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-purple-700)">
+              700
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-purple-800)">
+              800
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-purple-900)">
+              900
+            </div>
+          </div>
+          <h4>Indigo</h4>
+          <div class="row-span:-1">
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-indigo-000)"
+            >
+              000
+            </div>
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-indigo-100)"
+            >
+              100
+            </div>
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-indigo-200)"
+            >
+              200
+            </div>
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-indigo-300)"
+            >
+              300
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-indigo-400)">
+              400
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-indigo-500)">
+              500
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-indigo-600)">
+              600
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-indigo-700)">
+              700
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-indigo-800)">
+              800
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-indigo-900)">
+              900
+            </div>
+          </div>
+          <h4>Blue</h4>
+          <div class="row-span:-1">
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-blue-000)"
+            >
+              000
+            </div>
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-blue-100)"
+            >
+              100
+            </div>
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-blue-200)"
+            >
+              200
+            </div>
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-blue-300)"
+            >
+              300
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-blue-400)">
+              400
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-blue-500)">
+              500
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-blue-600)">
+              600
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-blue-700)">
+              700
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-blue-800)">
+              800
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-blue-900)">
+              900
+            </div>
+          </div>
+          <h4>Teal</h4>
+          <div class="row-span:-1">
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-teal-000)"
+            >
+              000
+            </div>
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-teal-100)"
+            >
+              100
+            </div>
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-teal-200)"
+            >
+              200
+            </div>
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-teal-300)"
+            >
+              300
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-teal-400)">
+              400
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-teal-500)">
+              500
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-teal-600)">
+              600
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-teal-700)">
+              700
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-teal-800)">
+              800
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-teal-900)">
+              900
+            </div>
+          </div>
+          <h4>Green</h4>
+          <div class="row-span:-1">
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-green-000)"
+            >
+              000
+            </div>
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-green-100)"
+            >
+              100
+            </div>
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-green-200)"
+            >
+              200
+            </div>
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-green-300)"
+            >
+              300
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-green-400)">
+              400
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-green-500)">
+              500
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-green-600)">
+              600
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-green-700)">
+              700
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-green-800)">
+              800
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-green-900)">
+              900
+            </div>
+          </div>
+          <h4>Yellow</h4>
+          <div class="row-span:-1">
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-yellow-000)"
+            >
+              000
+            </div>
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-yellow-100)"
+            >
+              100
+            </div>
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-yellow-200)"
+            >
+              200
+            </div>
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-yellow-300)"
+            >
+              300
+            </div>
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-yellow-400)"
+            >
+              400
+            </div>
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-yellow-500)"
+            >
+              500
+            </div>
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-yellow-600)"
+            >
+              600
+            </div>
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-yellow-700)"
+            >
+              700
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-yellow-800)">
+              800
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-yellow-900)">
+              900
+            </div>
+          </div>
+          <h4>Orange</h4>
+          <div class="row-span:-1">
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-orange-000)"
+            >
+              000
+            </div>
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-orange-100)"
+            >
+              100
+            </div>
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-orange-200)"
+            >
+              200
+            </div>
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-orange-300)"
+            >
+              300
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-orange-400)">
+              400
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-orange-500)">
+              500
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-orange-600)">
+              600
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-orange-700)">
+              700
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-orange-800)">
+              800
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-orange-900)">
+              900
+            </div>
+          </div>
+          <h4>Cool-Grey</h4>
+          <div class="row-span:-1">
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-cool-grey-000)"
+            >
+              000
+            </div>
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-cool-grey-100)"
+            >
+              100
+            </div>
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-cool-grey-200)"
+            >
+              200
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-cool-grey-300)">
+              300
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-cool-grey-400)">
+              400
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-cool-grey-500)">
+              500
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-cool-grey-600)">
+              600
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-cool-grey-700)">
+              700
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-cool-grey-800)">
+              800
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-cool-grey-900)">
+              900
+            </div>
+          </div>
+          <h4>Grey</h4>
+          <div class="row-span:-1">
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-grey-000)"
+            >
+              000
+            </div>
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-grey-100)"
+            >
+              100
+            </div>
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-grey-200)"
+            >
+              200
+            </div>
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-grey-300)"
+            >
+              300
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-grey-400)">
+              400
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-grey-500)">
+              500
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-grey-600)">
+              600
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-grey-700)">
+              700
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-grey-800)">
+              800
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-grey-900)">
+              900
+            </div>
+          </div>
+          <h4>Warm-Grey</h4>
+          <div class="row-span:-1">
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-warm-grey-000)"
+            >
+              000
+            </div>
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-warm-grey-100)"
+            >
+              100
+            </div>
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-warm-grey-200)"
+            >
+              200
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-warm-grey-300)">
+              300
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-warm-grey-400)">
+              400
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-warm-grey-500)">
+              500
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-warm-grey-600)">
+              600
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-warm-grey-700)">
+              700
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-warm-grey-800)">
+              800
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-warm-grey-900)">
+              900
+            </div>
+          </div>
+          <h4>Black</h4>
+          <div class="row-span:-1">
+            <div class="row-span:-1">
+              <div class="box box:sm w-16" style="--bg: var(--tl-black-000)">
+                000
+              </div>
+              <div class="box box:sm w-16" style="--bg: var(--tl-black-100)">
+                100
+              </div>
+              <div class="box box:sm w-16" style="--bg: var(--tl-black-200)">
+                200
+              </div>
+              <div class="box box:sm w-16" style="--bg: var(--tl-black-300)">
+                300
+              </div>
+            </div>
+          </div>
+          <h4>White</h4>
+          <div class="row-span:-1">
+            <div class="row-span:-1">
+              <div
+                class="box box:sm w-16 shadow-1 text:black-100"
+                style="--bg: var(--tl-white-000)"
+              >
+                000
+              </div>
+              <div
+                class="box box:sm w-16 shadow-1 text:black-100"
+                style="--bg: var(--tl-white-100)"
+              >
+                100
+              </div>
+              <div
+                class="box box:sm w-16 shadow-1 text:black-100"
+                style="--bg: var(--tl-white-200)"
+              >
+                200
+              </div>
+              <div
+                class="box box:sm w-16 shadow-1 text:black-100"
+                style="--bg: var(--tl-white-300)"
+              >
+                300
+              </div>
+            </div>
+          </div>
+          <h4>Semantic</h4>
+          <div class="row-span:-1">
+            <div
+              class="box box:sm w-16"
+              style="--bg: var(--tl-semantic-primary)"
+            >
+              primary
+            </div>
+            <div
+              class="box box:sm w-16"
+              style="--bg: var(--tl-semantic-success)"
+            >
+              success
+            </div>
+            <div
+              class="box box:sm w-16"
+              style="--bg: var(--tl-semantic-attention)"
+            >
+              attention
+            </div>
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-semantic-danger)"
+            >
+              danger
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-semantic-info)">
+              info
+            </div>
+          </div>
+          <h4>Brand</h4>
+          <div class="row-span:-1">
+            <div class="box box:sm w-16" style="--bg: var(--tl-brand-primary)">
+              primary
+            </div>
+            <div
+              class="box box:sm w-16 text:black-100"
+              style="--bg: var(--tl-brand-primary-alt)"
+            >
+              prim-alt
+            </div>
+            <div
+              class="box box:sm w-16"
+              style="--bg: var(--tl-brand-secondary)"
+            >
+              secondary
+            </div>
+            <div
+              class="box box:sm w-16"
+              style="--bg: var(--tl-brand-secondary-alt)"
+            >
+              sec-alt
+            </div>
+            <div class="box box:sm w-16" style="--bg: var(--tl-brand-accent)">
+              accent
+            </div>
+            <div
+              class="box box:sm w-16"
+              style="--bg: var(--tl-brand-accent-alt)"
+            >
+              accent-alt
+            </div>
+          </div>
+        </div>
+      </article>
+      <hr />
+      <article id="sizes">
+        <h2 class="offset-heading">Sizing</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Token</th>
+              <th>Size</th>
+              <th class="@sm:display:none"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>--tl-size-0</td>
+              <td>0rem</td>
+              <td>
+                <div
+                  class="box box:sm @sm:display:none r-sm"
+                  style="--size: var(--tl-size-0)"
+                ></div>
+              </td>
+            </tr>
+            <tr>
+              <td>--tl-size-1</td>
+              <td>0.06rem</td>
+              <td>
+                <div
+                  class="box box:sm @sm:display:none r-sm"
+                  style="--size: var(--tl-size-1)"
+                ></div>
+              </td>
+            </tr>
+            <tr>
+              <td>--tl-size-2</td>
+              <td>0.13rem</td>
+              <td>
+                <div
+                  class="box box:sm @sm:display:none r-sm"
+                  style="--size: var(--tl-size-2)"
+                ></div>
+              </td>
+            </tr>
+            <tr>
+              <td>--tl-size-3</td>
+              <td>0.19rem</td>
+              <td>
+                <div
+                  class="box box:sm @sm:display:none r-sm"
+                  style="--size: var(--tl-size-3)"
+                ></div>
+              </td>
+            </tr>
+            <tr>
+              <td>--tl-size-4</td>
+              <td>0.25rem</td>
+              <td>
+                <div
+                  class="box box:sm @sm:display:none r-sm"
+                  style="--size: var(--tl-size-4)"
+                ></div>
+              </td>
+            </tr>
+            <tr>
+              <td>--tl-size-5</td>
+              <td>0.31rem</td>
+              <td>
+                <div
+                  class="box box:sm @sm:display:none r-sm"
+                  style="--size: var(--tl-size-5)"
+                ></div>
+              </td>
+            </tr>
+            <tr>
+              <td>--tl-size-6</td>
+              <td>0.38rem</td>
+              <td>
+                <div
+                  class="box box:sm @sm:display:none r-sm"
+                  style="--size: var(--tl-size-6)"
+                ></div>
+              </td>
+            </tr>
+            <tr>
+              <td>--tl-size-7</td>
+              <td>0.5rem</td>
+              <td>
+                <div
+                  class="box box:sm @sm:display:none r-sm"
+                  style="--size: var(--tl-size-7)"
+                ></div>
+              </td>
+            </tr>
+            <tr>
+              <td>--tl-size-8</td>
+              <td>0.65rem</td>
+              <td>
+                <div
+                  class="box box:sm @sm:display:none r-sm"
+                  style="--size: var(--tl-size-8)"
+                ></div>
+              </td>
+            </tr>
+            <tr>
+              <td>--tl-size-9</td>
+              <td>0.75rem</td>
+              <td>
+                <div
+                  class="box box:sm @sm:display:none r-sm"
+                  style="--size: var(--tl-size-9)"
+                ></div>
+              </td>
+            </tr>
+            <tr>
+              <td>--tl-size-10</td>
+              <td>1rem</td>
+              <td>
+                <div
+                  class="box box:sm @sm:display:none r-sm"
+                  style="--size: var(--tl-size-10)"
+                ></div>
+              </td>
+            </tr>
+            <tr>
+              <td>--tl-size-11</td>
+              <td>1.25rem</td>
+              <td>
+                <div
+                  class="box box:sm @sm:display:none r-sm"
+                  style="--size: var(--tl-size-11)"
+                ></div>
+              </td>
+            </tr>
+            <tr>
+              <td>--tl-size-12</td>
+              <td>1.5rem</td>
+              <td>
+                <div
+                  class="box box:sm @sm:display:none r-sm"
+                  style="--size: var(--tl-size-12)"
+                ></div>
+              </td>
+            </tr>
+            <tr>
+              <td>--tl-size-13</td>
+              <td>2rem</td>
+              <td>
+                <div
+                  class="box box:sm @sm:display:none r-sm"
+                  style="--size: var(--tl-size-13)"
+                ></div>
+              </td>
+            </tr>
+            <tr>
+              <td>--tl-size-14</td>
+              <td>2.5rem</td>
+              <td>
+                <div
+                  class="box box:sm @sm:display:none r-sm"
+                  style="--size: var(--tl-size-14)"
+                ></div>
+              </td>
+            </tr>
+            <tr>
+              <td>--tl-size-15</td>
+              <td>3.87rem</td>
+              <td>
+                <div
+                  class="box box:sm @sm:display:none r-sm"
+                  style="--size: var(--tl-size-15)"
+                ></div>
+              </td>
+            </tr>
+            <tr>
+              <td>--tl-size-16</td>
+              <td>4.75rem</td>
+              <td>
+                <div
+                  class="box box:sm @sm:display:none r-sm"
+                  style="--size: var(--tl-size-16)"
+                ></div>
+              </td>
+            </tr>
+            <tr>
+              <td>--tl-size-17</td>
+              <td>6rem</td>
+              <td>
+                <div
+                  class="box box:sm @sm:display:none r-sm"
+                  style="--size: var(--tl-size-17)"
+                ></div>
+              </td>
+            </tr>
+            <tr>
+              <td>--tl-size-18</td>
+              <td>7.5rem</td>
+              <td>
+                <div
+                  class="box box:sm @sm:display:none r-sm"
+                  style="--size: var(--tl-size-18)"
+                ></div>
+              </td>
+            </tr>
+            <tr>
+              <td>--tl-size-19</td>
+              <td>9.37rem</td>
+              <td>
+                <div
+                  class="box box:sm @sm:display:none r-sm"
+                  style="--size: var(--tl-size-19)"
+                ></div>
+              </td>
+            </tr>
+            <tr>
+              <td>--tl-size-20</td>
+              <td>11.62rem</td>
+              <td>
+                <div
+                  class="box box:sm @sm:display:none r-sm"
+                  style="--size: var(--tl-size-20)"
+                ></div>
+              </td>
+            </tr>
+            <tr>
+              <td>--tl-size-21</td>
+              <td>14.5rem</td>
+              <td>
+                <div
+                  class="box box:sm @sm:display:none r-sm"
+                  style="--size: var(--tl-size-21)"
+                ></div>
+              </td>
+            </tr>
+            <tr>
+              <td>--tl-size-22</td>
+              <td>18rem</td>
+              <td>
+                <div
+                  class="box box:sm @sm:display:none r-sm"
+                  style="--size: var(--tl-size-22)"
+                ></div>
+              </td>
+            </tr>
+            <tr>
+              <td>--tl-size-23</td>
+              <td>22.75rem</td>
+              <td>
+                <div
+                  class="box box:sm @sm:display:none r-sm"
+                  style="--size: var(--tl-size-23)"
+                ></div>
+              </td>
+            </tr>
+            <tr>
+              <td>--tl-size-24</td>
+              <td>28.5rem</td>
+              <td>
+                <div
+                  class="box box:sm @sm:display:none r-sm"
+                  style="--size: var(--tl-size-24)"
+                ></div>
+              </td>
+            </tr>
+            <tr>
+              <td>--tl-size-25</td>
+              <td>35.5rem</td>
+              <td>
+                <div
+                  class="box box:sm @sm:display:none r-sm"
+                  style="--size: var(--tl-size-25)"
+                ></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+      <hr />
+      <article id="radius">
+        <h2 class="offset-heading">Radius</h2>
+
+        <div class="grid col-3 @sm:col-2">
+          <div class="box r-none">none</div>
+          <div class="box r-xs">xs</div>
+          <div class="box r-sm">sm</div>
+          <div class="box r-md">md</div>
+          <div class="box r-lg">lg</div>
+          <div class="box r-xl">xl</div>
+          <div class="box r-2xl">2xl</div>
+          <div class="box r-3xl">3xl</div>
+          <div class="box r-round">round</div>
+        </div>
+      </article>
+      <hr />
+      <article id="eases">
+        <h2 class="offset-heading">Eases</h2>
+
+        <div>
+          <div class="box box:sm animate w-17 r-sm m-2">linear</div>
+          <hr />
+          <div
+            class="box box:sm animate w-17 r-sm m-2"
+            style="--ease: var(--tl-ease-sine-in)"
+          >
+            sine-in
+          </div>
+          <div
+            class="box box:sm animate w-17 r-sm m-2"
+            style="--ease: var(--tl-ease-sine-out)"
+          >
+            sine-out
+          </div>
+          <div
+            class="box box:sm animate w-17 r-sm m-2"
+            style="--ease: var(--tl-ease-sine-inout)"
+          >
+            sine-inout
+          </div>
+          <hr />
+          <div
+            class="box box:sm animate w-17 r-sm m-2"
+            style="--ease: var(--tl-ease-circ-in)"
+          >
+            circ-in
+          </div>
+          <div
+            class="box box:sm animate w-17 r-sm m-2"
+            style="--ease: var(--tl-ease-circ-out)"
+          >
+            circ-out
+          </div>
+          <div
+            class="box box:sm animate w-17 r-sm m-2"
+            style="--ease: var(--tl-ease-circ-inout)"
+          >
+            circ-inout
+          </div>
+          <hr />
+          <div
+            class="box box:sm animate w-17 r-sm m-2"
+            style="--ease: var(--tl-ease-cubic-in)"
+          >
+            cubic-in
+          </div>
+          <div
+            class="box box:sm animate w-17 r-sm m-2"
+            style="--ease: var(--tl-ease-cubic-out)"
+          >
+            cubic-out
+          </div>
+          <div
+            class="box box:sm animate w-17 r-sm m-2"
+            style="--ease: var(--tl-ease-cubic-inout)"
+          >
+            cubic-inout
+          </div>
+          <hr />
+          <div
+            class="box box:sm animate w-17 r-sm m-2"
+            style="--ease: var(--tl-ease-quad-in)"
+          >
+            quad-in
+          </div>
+          <div
+            class="box box:sm animate w-17 r-sm m-2"
+            style="--ease: var(--tl-ease-quad-out)"
+          >
+            quad-out
+          </div>
+          <div
+            class="box box:sm animate w-17 r-sm m-2"
+            style="--ease: var(--tl-ease-quad-inout)"
+          >
+            quad-inout
+          </div>
+          <hr />
+          <div
+            class="box box:sm animate w-17 r-sm m-2"
+            style="--ease: var(--tl-ease-quart-in)"
+          >
+            quart-in
+          </div>
+          <div
+            class="box box:sm animate w-17 r-sm m-2"
+            style="--ease: var(--tl-ease-quart-out)"
+          >
+            quart-out
+          </div>
+          <div
+            class="box box:sm animate w-17 r-sm m-2"
+            style="--ease: var(--tl-ease-quart-inout)"
+          >
+            quart-inout
+          </div>
+          <hr />
+          <div
+            class="box box:sm animate w-17 r-sm m-2"
+            style="--ease: var(--tl-ease-quint-in)"
+          >
+            quint-in
+          </div>
+          <div
+            class="box box:sm animate w-17 r-sm m-2"
+            style="--ease: var(--tl-ease-quint-out)"
+          >
+            quint-out
+          </div>
+          <div
+            class="box box:sm animate w-17 r-sm m-2"
+            style="--ease: var(--tl-ease-quint-inout)"
+          >
+            quint-inout
+          </div>
+          <hr />
+          <div
+            class="box box:sm animate w-17 r-sm m-2"
+            style="--ease: var(--tl-ease-expo-in)"
+          >
+            expo-in
+          </div>
+          <div
+            class="box box:sm animate w-17 r-sm m-2"
+            style="--ease: var(--tl-ease-expo-out)"
+          >
+            expo-out
+          </div>
+          <div
+            class="box box:sm animate w-17 r-sm m-2"
+            style="--ease: var(--tl-ease-expo-inout)"
+          >
+            expo-inout
+          </div>
+          <hr />
+          <div
+            class="box box:sm animate w-17 r-sm m-2"
+            style="--ease: var(--tl-ease-back-in)"
+          >
+            back-in
+          </div>
+          <div
+            class="box box:sm animate w-17 r-sm m-2"
+            style="--ease: var(--tl-ease-back-out)"
+          >
+            back-out
+          </div>
+          <div
+            class="box box:sm animate w-17 r-sm m-2"
+            style="--ease: var(--tl-ease-back-inout)"
+          >
+            back-inout
+          </div>
+        </div>
+      </article>
+      <hr />
+      <article id="shadows">
+        <h2 class="offset-heading">Shadows</h2>
+        <div class="grid col-3 @sm:col-2">
+          <div class="box bg-none shadow-0 text:black-100">--tl-shadow-0</div>
+          <div class="box bg-none shadow-1 text:black-100">--tl-shadow-1</div>
+          <div class="box bg-none shadow-2 text:black-100">--tl-shadow-2</div>
+          <div class="box bg-none shadow-3 text:black-100">--tl-shadow-3</div>
+          <div class="box bg-none shadow-4 text:black-100">--tl-shadow-4</div>
+          <div class="box bg-none shadow-5 text:black-100">--tl-shadow-5</div>
+          <div class="box bg-none shadow-6 text:black-100">--tl-shadow-6</div>
+          <div class="box bg-none shadow-7 text:black-100">--tl-shadow-7</div>
+          <div class="box bg-none shadow-8 text:black-100">--tl-shadow-8</div>
+          <div class="box bg-none shadow:inset-1 text:black-100">
+            --tl-insetshadow-1
+          </div>
+          <div class="box bg-none shadow:inset-2 text:black-100">
+            --tl-insetshadow-2
+          </div>
+          <div class="box bg-none shadow:inset-3 text:black-100">
+            --tl-insetshadow-3
+          </div>
+          <div class="box bg-none shadow:inset-4 text:black-100">
+            --tl-insetshadow-4
+          </div>
+        </div>
+      </article>
+      <hr />
+      <article id="gradients">
+        <h2 class="offset-heading">Gradients</h2>
+      </article>
+      <hr />
+      <article>
+        <h2 class="offset-heading" id="elements">@Teal/elements</h2>
+        <h3 class="offset-heading">Overview</h3>
+      </article>
       <article id="heading">
         <h2 class="offset-heading">Headings</h2>
         <h1>Heading 1</h1>
@@ -243,19 +1384,19 @@
               <th scope="row">232333E</th>
               <td>Lizzie</td>
               <td>Wikramaratna-Clarke</td>
-              <td>lizze@builtbysepp.dev</td>
+              <td>lizzie@builtbysepp.dev</td>
             </tr>
             <tr>
               <th scope="row">344224H</th>
               <td>Henry</td>
               <td>Wikramaratna-Clarke</td>
-              <td>henry@builtbysepp.dev</td>
+              <td>silvasurfer@builtbysepp.dev</td>
             </tr>
             <tr>
               <th scope="row">432163E</th>
               <td>Edward</td>
               <td>Wikramaratna-Clarke</td>
-              <td>ed@builtbysepp.dev</td>
+              <td>olward@builtbysepp.dev</td>
             </tr>
           </tbody>
         </table>
