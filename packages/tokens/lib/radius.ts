@@ -2,12 +2,14 @@ import { TealValueObject } from "../types";
 
 export const Radius: TealValueObject = {
   radius: {
-    "0": "var(--tl-size-0)",
-    "1": "var(--tl-size-2)",
-    "2": "var(--tl-size-4)",
-    "3": "var(--tl-size-6)",
-    "4": "var(--tl-size-8)",
-    "5": "var(--tl-size-10)",
-    "6": "9999px",
+    none: "0",
+    xs: "0.13rem",
+    sm: "0.25rem",
+    md: "0.38rem",
+    lg: "0.68rem",
+    xl: "1rem",
+    "2xl": "2rem",
+    "3xl": "3.87rem",
+    round: "9999px",
   },
 };

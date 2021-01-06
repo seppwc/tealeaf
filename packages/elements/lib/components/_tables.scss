@@ -2,7 +2,7 @@ table {
   border-collapse: collapse;
   margin-bottom: 10px;
   width: 100%;
-  table-layout: fixed;
+  table-layout: auto;
 
   & > thead {
     --tl-thead-bordercolor: #259e9e;
