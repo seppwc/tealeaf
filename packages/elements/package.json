@@ -1,6 +1,6 @@
 {
-  "name": "@teal/elements",
-  "version": "0.0.0",
+  "name": "@teal-ui/elements",
+  "version": "0.0.1",
   "description": "> TODO: description",
   "author": "phl3bas <phl3bas87@gmail.com>",
   "homepage": "https://github.com/Phl3bas/Teal#readme",
@@ -11,6 +11,9 @@
     "test": "__tests__"
   },
   "files": [
+    "package.json",
+    "README.md",
+    "LICENCE",
     "teal-elements.css"
   ],
   "publishConfig": {
