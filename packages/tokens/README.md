@@ -8,7 +8,7 @@
  <hr>
 <br>
 
-## @teal/tokens
+## @teal-ui/tokens
 
 tokens provides the user with a stylesheet containing a set of design tokens (css custom properties/css variables), these tokens then give the user a curated set of values to use in their project. This gives the developers more consistancy when reaching for values for
 
@@ -31,7 +31,7 @@ we have decided to split token naming convensions into two catagories, `sets` : 
 
 ### 1. Colors (numeric set)
 
-Teal provides users with a curated spectrum of colors to chose from, instead of wildy picking colors from a color picker, we provide a 10 scale tonal sets for Red,Pink,Purple,Indigo,Blue,Teal,Green,Yellow and various greys (grey, warm-grey and cool-grey)
+TealUI provides users with a curated spectrum of colors to chose from, instead of wildy picking colors from a color picker, we provide a 10 scale tonal sets for Red,Pink,Purple,Indigo,Blue,Teal,Green,Yellow and various greys (grey, warm-grey and cool-grey)
 
 color tokens follow the format of:
 
@@ -122,7 +122,7 @@ eg
 
 Box shadows are reguarly used in modern web design to aid providing visual heirarcy and depth within a page.
 
-Teal provides a curated collection of box shadows which have had inspiration drawn from my design systems and sites.
+TealUI provides a curated collection of box shadows which have had inspiration drawn from my design systems and sites.
 
 token naming format goes as follows
 
