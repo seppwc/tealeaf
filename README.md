@@ -3,7 +3,7 @@
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 
 <center>
-<img src="./assets/logo.svg" alt="teal logo"/>
+<img src="./assets/logo-blacktext.svg" alt="teal logo"/>
 </center>
 <center>A Beautifully modular Design System</center>
 <br>
