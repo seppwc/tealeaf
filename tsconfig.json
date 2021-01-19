@@ -26,7 +26,8 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "resolveJsonModule": true,
-    "baseUrl": "."
+    "baseUrl": ".",
+    "forceConsistentCasingInFileNames": false
   },
   "exclude": ["node_modules", "**/*.spec.ts"],
   "include": ["./packages/**/*.tsx", "./packages/**/*.ts", "index.d.ts"]

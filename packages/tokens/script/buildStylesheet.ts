@@ -1,4 +1,4 @@
-import { Colors, Elevation, Scale, Eases, Radius } from "../lib";
+import { colors, elevations, scales, eases, radius } from "../lib";
 import {
   BuildToCSSString,
   WrapWithRoot,
@@ -6,11 +6,11 @@ import {
 import { writeFile } from "fs";
 
 const values = [
-  BuildToCSSString(Colors),
-  BuildToCSSString(Elevation),
-  BuildToCSSString(Scale),
-  BuildToCSSString(Eases),
-  BuildToCSSString(Radius),
+  BuildToCSSString(colors),
+  BuildToCSSString(elevations),
+  BuildToCSSString(scales),
+  BuildToCSSString(eases),
+  BuildToCSSString(radius),
 ];
 
 writeFile("teal-tokens.css", WrapWithRoot(values), () => {});

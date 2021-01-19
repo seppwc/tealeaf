@@ -4,11 +4,11 @@ import { Scale as scales } from "./scale";
 import { Eases as eases } from "./eases";
 import { Radius as radius } from "./radius";
 
-export const Colors = colors;
-export const Elevation = elevations;
-export const Scale = scales;
-export const Eases = eases;
-export const Radius = radius;
+export { colors };
+export { elevations };
+export { scales };
+export { eases };
+export { radius };
 
 export const CoreProperties = {
   ...colors,

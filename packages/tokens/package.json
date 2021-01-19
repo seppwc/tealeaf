@@ -18,6 +18,7 @@
     "test": "__tests__"
   },
   "files": [
+    "lib/*",
     "teal-tokens.css",
     "LICENCE",
     "README.md",

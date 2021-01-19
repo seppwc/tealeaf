@@ -10,6 +10,7 @@
     "skipLibCheck": true,
     "noLib": false,
     "strict": true,
+    "allowJs": true,
     "importHelpers": true,
     "moduleResolution": "node",
     "removeComments": true,
@@ -26,7 +27,8 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "resolveJsonModule": true,
-    "baseUrl": "."
+    "baseUrl": ".",
+    "forceConsistentCasingInFileNames": false
   },
   "exclude": ["node_modules", "**/*.spec.ts"],
   "include": ["./packages/**/*.tsx", "./packages/**/*.ts", "index.d.ts"]

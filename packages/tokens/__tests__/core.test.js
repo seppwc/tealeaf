@@ -1,7 +1,7 @@
-'use strict';
+"use strict";
 
-const core = require('..');
+const core = require("..");
 
-describe('@teal/core', () => {
-    it('needs tests');
+describe("@teal/core", () => {
+  test();
 });
