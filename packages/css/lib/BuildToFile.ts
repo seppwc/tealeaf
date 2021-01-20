@@ -20,7 +20,7 @@ export async function BuildToFile(
       .map((s) => {
         return buildClassNames(resolvedConfig, s, screens[s]);
       })
-      .join("");
+      .join(" ");
 
     writeFile(`${filename}.css`, data, "utf-8")
       .then(resolve)

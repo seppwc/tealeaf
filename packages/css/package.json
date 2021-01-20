@@ -1,6 +1,6 @@
 {
   "name": "@teal-ui/css",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "> TODO: description",
   "author": "phl3bas <phl3bas87@gmail.com>",
   "homepage": "https://github.com/Phl3bas/Teal#readme",
@@ -11,7 +11,11 @@
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "package.json",
+    "README.md",
+    "LICENCE",
+    "teal-css.css",
+    "teal-css-lite.css"
   ],
   "publishConfig": {
     "access": "public"
@@ -29,9 +33,13 @@
   },
   "devDependencies": {
     "@types/jest": "^26.0.20",
+    "@types/lodash": "^4.14.168",
     "@types/node": "^14.14.20",
     "jest": "^26.6.3",
     "ts-node": "^9.1.1",
     "typescript": "^4.1.3"
+  },
+  "dependencies": {
+    "lodash": "^4.17.20"
   }
 }
