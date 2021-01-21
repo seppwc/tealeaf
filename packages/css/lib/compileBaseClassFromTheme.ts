@@ -6,6 +6,7 @@ export enum Variants {
   "responsive",
   "hover",
   "focus",
+  "visited",
 }
 
 export function compileBaseClassesFromTheme(
@@ -76,6 +77,19 @@ function resolveClassDeclarations(
   return _.flattenDeep(arr);
 }
 
+function getVariantSuffixString(variant: string): string {
+  switch (variant) {
+    case "hover":
+      return "\\:hover";
+    case "focus":
+      return "\\:focus";
+    case "visted":
+      return "\\:visited";
+    default:
+      return "";
+  }
+}
+
 function resolveObject(set: string, obj: { [key: string]: string }) {
   return _.mapKeys(obj, (_, key) => `${set}-${key}`);
 }
@@ -88,14 +102,15 @@ function resolveString(
   variant?: string
 ): string {
   if (variant) {
+    const variantSuffix = getVariantSuffixString(variant);
     return `${escapeString(classname)}-${escapeString(
       classSet
-    )}:${variant}{${convertToKababCase(property)}:${value};}`;
+    )}${variantSuffix}:${variant}{${convertToKababCase(property)}:${value};}\n`;
   }
 
-  return `${escapeString(classname)}-${escapeString(
+  return `${escapeString(classname)}${classname && "-"}${escapeString(
     classSet
-  )}{${convertToKababCase(property)}:${value};}`;
+  )}{${convertToKababCase(property)}:${value};}\n`;
 }
 
 // ` .{prefix}{className}{if-nest:classname}{set/scale}{variant}`{ {cssproperty}:{value}; }

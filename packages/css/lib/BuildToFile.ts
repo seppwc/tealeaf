@@ -3,6 +3,7 @@ import DEFAULT_CONFIG from "../stub/DefaultConfig";
 import { buildClassNames } from "./BuildClassNames";
 import { resolveConfigFunctions } from "./resolveConfigFunctions";
 import { ConfigInterface } from "../types";
+import CleanCSS from "clean-css";
 
 export async function BuildToFile(
   filename: string,
@@ -22,12 +23,15 @@ export async function BuildToFile(
       })
       .join(" ");
 
-    writeFile(`${filename}.css`, data, "utf-8")
+    const cleanCSS = new CleanCSS().minify(data);
+
+    writeFile(`${filename}.css`, cleanCSS.styles, "utf-8")
       .then(resolve)
       .catch((err) => {
         console.error(err);
         reject();
       });
+
     console.log("End Process: ", filename);
   });
 }
