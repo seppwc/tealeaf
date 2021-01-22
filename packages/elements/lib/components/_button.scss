@@ -36,13 +36,15 @@ button,
 input[type="submit"],
 input[type="button"],
 [role="button"] {
+  --tl-button-color: var(--tl-teal-900);
   display: inline-block;
   cursor: pointer;
-  margin: 0.25rem;
-  background: rgb(227, 227, 227);
-  border: 1px solid rgb(221, 221, 221);
+  margin-block: 0.25rem;
+  margin-inline-end: 0.25rem;
+  background: rgb(223, 223, 223);
+  border: 1px solid rgba(223, 223, 223, 0.3);
   padding: 0.65rem 1.5rem;
-  color: #1f4b4b;
+  color: var(--tl-button-color);
   border-radius: 0.25rem;
 
   outline: none;
@@ -51,16 +53,16 @@ input[type="button"],
   line-height: 1;
 
   &:visited {
-    color: #1f4b4b;
+    color: var(--tl-button-color);
   }
 
   &:focus {
     border: 1px solid #2bb9b9;
-    box-shadow: 0 0 0px 1px #2bb9b9;
+    box-shadow: 0 0 0px 2px #2bb9b9;
   }
 
   &:hover {
-    filter: brightness(0.97);
+    filter: brightness(0.95);
   }
 }
 
@@ -71,9 +73,8 @@ a[role="button"]:not([href]),
 a[role="button"][href=""] {
   cursor: not-allowed;
   pointer-events: none;
-  background: #a7a7a7;
-  border: 1px solid #959595;
-  color: rgb(255, 255, 255);
+  filter: contrast(30%) saturate(90%) brightness(1.5);
+  color: var(--tl-black-000);
 
   &:hover {
     filter: none;
