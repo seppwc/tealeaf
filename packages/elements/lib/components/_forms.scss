@@ -12,6 +12,7 @@ label {
 
 input[type="text"],
 input[type="search"],
+input[type="email"],
 textarea,
 select,
 input[list] {
@@ -19,11 +20,9 @@ input[list] {
   width: calc(100% - 0.5rem - 2px);
   padding: 0;
   padding-left: 0.5rem;
-
   border: 1px solid #b5c0c6;
   height: 2rem;
   border-radius: 0.25rem;
-
   margin-bottom: 0.5rem;
 }
 
