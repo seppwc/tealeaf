@@ -24,7 +24,7 @@
     "url": "git+https://github.com/Phl3bas/Teal.git"
   },
   "scripts": {
-    "build": "ts-node ./lib/index.ts",
+    "build": "sass --no-source-map lib/index.scss:teal-elements.css --style=compressed",
     "build:watch": "sass --no-source-map --watch lib/index.scss:teal-elements.css --style=compressed",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
