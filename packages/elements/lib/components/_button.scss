@@ -29,14 +29,14 @@ button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
-  outline: npne;
+  outline: none;
 }
 
 button,
 input[type="submit"],
 input[type="button"],
 [role="button"] {
-  --tl-button-color: var(--tl-teal-900);
+  --tl-button-color: #165f5f;
   display: inline-block;
   cursor: pointer;
   margin-block: 0.25rem;
@@ -74,7 +74,7 @@ a[role="button"][href=""] {
   cursor: not-allowed;
   pointer-events: none;
   filter: contrast(30%) saturate(90%) brightness(1.5);
-  color: var(--tl-black-000);
+  color: #333333;
 
   &:hover {
     filter: none;
