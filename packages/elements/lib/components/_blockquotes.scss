@@ -29,7 +29,7 @@ blockquote {
     color: #364046;
 
     &::before {
-      display: var(--tl-blockquote-leftquotee);
+      display: var(--tl-blockquote-leftquote);
       content: url('data:image/svg+xml;utf8,<svg width="43" height="35" viewBox="0 0 43 35" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.5469 0.664062L20 5.72656C15.6406 11.6797 13.3906 18.1016 13.25 24.9922V34.5547H0.3125V26.3984C0.3125 21.6172 1.4375 16.8828 3.6875 12.1953C5.98438 7.50781 8.9375 3.66406 12.5469 0.664062ZM34.6953 0.664062L42.1484 5.72656C37.7891 11.6797 35.5391 18.1016 35.3984 24.9922V34.5547H22.4609V26.3984C22.4609 21.6172 23.5859 16.8828 25.8359 12.1953C28.1328 7.50781 31.0859 3.66406 34.6953 0.664062Z" fill="%23CED5D9"/></svg>');
       position: absolute;
       top: -1rem;
