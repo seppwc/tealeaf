@@ -1,14 +1,24 @@
 table {
+  --tl-thead-bordercolor: #259e9e;
+  --tl-thead-color: #165f5f;
+  --tl-tr-partition: #ced5d9;
   border-collapse: collapse;
   margin-bottom: 10px;
   width: 100%;
   table-layout: auto;
 
   & > thead {
-    --tl-thead-bordercolor: #259e9e;
-    --tl-thead-color: #165f5f;
     color: var(--tl-thead-color);
     border-bottom: 2px solid var(--tl-thead-bordercolor);
+  }
+
+  & > tfoot {
+    color: var(--tl-tfoot-color, var(--tl-thead-color));
+    border-top: 2px double
+      var(--tl-foot-bordercolor, var(--tl-thead-bordercolor));
+    border-bottom: 2px solid
+      var(--tl-foot-bordercolor, var(--tl-thead-bordercolor));
+    margin-top: 4px;
   }
 }
 
@@ -29,6 +39,9 @@ td {
 }
 
 tbody tr {
-  --tl-tr-partition: #ced5d9;
   border-bottom: 1px solid var(--tl-tr-partition);
+
+  &:last-of-type {
+    margin-bottom: 2px;
+  }
 }
