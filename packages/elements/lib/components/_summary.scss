@@ -1,0 +1,31 @@
+details {
+  border-radius: var(--tl-radius-md);
+  background: white;
+  box-shadow: var(--tl-shadow-1);
+  margin-block-end: 1rem;
+
+  &[open] {
+    padding-block-end: 0.5rem;
+  }
+
+  & > *:not(summary) {
+    margin-inline: 1rem;
+  }
+
+  & summary {
+    padding: 0.5rem 1rem;
+    border-block-end: none;
+    border-radius: var(--tl-radius-md);
+    cursor: pointer;
+
+    &:hover {
+      background: var(--tl-white-100);
+    }
+  }
+
+  &[open] > summary {
+    border-block-end: 1px solid var(--tl-cool-grey-100);
+    background: var(--tl-white-100);
+    border-radius: var(--tl-radius-md) var(--tl-radius-md) 0 0;
+  }
+}
