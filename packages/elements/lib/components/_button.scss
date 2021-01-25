@@ -35,7 +35,9 @@ button:-moz-focusring,
 button,
 input[type="submit"],
 input[type="button"],
-[role="button"] {
+input[type="reset"],
+[role="button"],
+input[type="color"] {
   --tl-button-color: #165f5f;
   display: inline-block;
   cursor: pointer;
@@ -67,6 +69,7 @@ input[type="button"],
 button:disabled,
 input[type="submit"]:disabled,
 input[type="button"]:disabled,
+input[type="reset"]:disabled,
 a[role="button"]:not([href]),
 a[role="button"][href=""] {
   cursor: not-allowed;

@@ -8,14 +8,55 @@ form {
 
 label {
   display: block;
+  margin-block-start: 0.13rem;
+}
+
+input,
+textarea {
+  color: #333333;
+  margin-bottom: 0.5rem;
+
+  &::placeholder {
+    color: #8495a0;
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid var(--tl-input-focus);
+    box-shadow: 0 0 0px 2px var(--tl-input-focus);
+  }
+
+  &:required:not(:placeholder-shown):valid {
+    outline: none;
+    border: 1px solid var(--tl-input-success);
+    box-shadow: 0 0 0px 2px var(--tl-input-success);
+  }
+
+  &:required:not(:placeholder-shown):invalid {
+    outline: none;
+    border: 1px solid var(--tl-input-failure);
+    box-shadow: 0 0 0px 2px var(--tl-input-failure);
+  }
 }
 
 input[type="text"],
 input[type="search"],
 input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
 textarea,
 select,
 input[list] {
+  --tl-input-success: #69bd7b;
+  --tl-input-failure: #da4a4a;
+  --tl-input-focus: #2bb9b9;
   // display: flex;
   width: calc(100% - 0.5rem - 2px);
   padding: 0;
@@ -23,10 +64,16 @@ input[list] {
   border: 1px solid #b5c0c6;
   height: 2rem;
   border-radius: 0.25rem;
-  margin-bottom: 0.5rem;
+}
+
+select:focus {
+  outline: none;
+  border: 1px solid var(--tl-input-focus);
+  box-shadow: 0 0 0px 2px var(--tl-input-focus);
 }
 
 textarea {
+  min-height: 4rem;
   padding-top: 0.5rem;
   resize: vertical;
 }
@@ -45,5 +92,62 @@ fieldset {
   width: calc(100% - 1.5rem - 2px);
   border: 1px solid #b5c0c6;
   border-radius: 0.25rem;
-  padding-bottom: 1.5rem;
+  padding: 0 1.5rem;
+  padding-bottom: 1rem;
+
+  & legend {
+    color: #808080;
+  }
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  &:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+  }
+}
+
+input[type="checkbox"] {
+  margin-inline-end: 5px;
+}
+
+input[type="radio"] {
+  margin-inline-end: 4px;
+}
+
+input[type="file"] {
+  padding: 5px;
+  border: 1px solid #ced5d9;
+  border-radius: 0.25rem;
+}
+
+input[type="color"] {
+  padding: 2px;
+  height: 1.75rem;
+  width: 2rem;
+  border: 1px solid rgba(219, 219, 219, 0.8);
+  color: #404040;
+}
+
+input[type="range"] {
+  cursor: grab;
+
+  &:active {
+    cursor: grabbing;
+  }
+}
+
+input[type="email"] {
+  &:not(:placeholder-shown):valid {
+    outline: none;
+    border: 1px solid var(--tl-input-success);
+    box-shadow: 0 0 0px 2px var(--tl-input-success);
+  }
+  &:not(:placeholder-shown):invalid {
+    outline: none;
+    border: 1px solid var(--tl-input-failure);
+    box-shadow: 0 0 0px 2px var(--tl-input-failure);
+  }
 }
