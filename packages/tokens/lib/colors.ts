@@ -161,8 +161,8 @@ export const Colors: TealValueObject = {
   semantic: {
     primary: "#2BB9B9",
     success: "#69BD7B",
-    attention: "#DA4A4A",
-    danger: "#FFDD64",
+    attention: "#FFDD64",
+    danger: "#DA4A4A",
     info: "#5499D2",
   },
   brand: {
