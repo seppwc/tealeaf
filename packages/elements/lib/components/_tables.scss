@@ -15,9 +15,9 @@ table {
   & > tfoot {
     color: var(--tl-tfoot-color, var(--tl-thead-color));
     border-top: 2px double
-      var(--tl-foot-bordercolor, var(--tl-thead-bordercolor));
+      var(--tl-tfoot-bordercolor, var(--tl-thead-bordercolor));
     border-bottom: 2px solid
-      var(--tl-foot-bordercolor, var(--tl-thead-bordercolor));
+      var(--tl-tfoot-bordercolor, var(--tl-thead-bordercolor));
     margin-top: 4px;
   }
 }
