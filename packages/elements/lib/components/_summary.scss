@@ -17,6 +17,13 @@ details {
     border-block-end: none;
     border-radius: var(--tl-radius-md);
     cursor: pointer;
+    border: 1px solid transparent;
+
+    &:focus {
+      outline: none;
+      border: 1px solid #2bb9b9;
+      box-shadow: 0 0 0px 2px #2bb9b9;
+    }
 
     &:hover {
       background: var(--tl-white-100);
