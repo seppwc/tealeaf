@@ -1,4 +1,4 @@
-# `@teal/elements`
+# `@tealeaf/elements`
 
 > TODO: description
 

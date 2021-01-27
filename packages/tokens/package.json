@@ -1,11 +1,11 @@
 {
-  "name": "@teal-ui/tokens",
+  "name": "@tealeaf/tokens",
   "version": "0.0.1",
-  "description": "Teal - A beautifully modular design system ",
+  "description": "Tealeaf - A beautifully modular design system ",
   "author": "phl3bas <info@builtbysepp.dev>",
-  "homepage": "https://github.com/Phl3bas/Teal#readme",
+  "homepage": "https://github.com/Phl3bas/Tealeaf#readme",
   "license": "MIT",
-  "main": "teal-tokens.css",
+  "main": "tealeaf-tokens.css",
   "types": "/types",
   "keywords": [
     "design system",
@@ -19,7 +19,7 @@
   },
   "files": [
     "lib/*",
-    "teal-tokens.css",
+    "tealeaf-tokens.css",
     "LICENCE",
     "README.md",
     "package.json"
@@ -29,14 +29,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Phl3bas/Teal.git"
+    "url": "git+https://github.com/Phl3bas/Tealeaf.git"
   },
   "scripts": {
     "build": "ts-node ./script/buildStylesheet.ts",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
-    "url": "https://github.com/Phl3bas/Teal/issues"
+    "url": "https://github.com/Phl3bas/Tealeaf/issues"
   },
   "devDependencies": {
     "@types/node": "^14.14.20",

@@ -1,35 +1,35 @@
-# TealUI
+# Tealeaf
 
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 
 <center>
-<img src="https://github.com/Phl3bas/TealUI/blob/main/assets/logo.svg" alt="teal logo"/>
+<img src="https://github.com/Phl3bas/Tealeaf/blob/main/assets/tealeaf-primary.svg" alt="tealeaf logo"/>
 </center>
 <center>A Beautifully modular Design System</center>
 <br>
  <hr>
 <br>
-<center><h2>What is TealUI?</h2></center>
+<center><h2>What is Tealeaf?</h2></center>
 
-TealUI is a modular design system / css framework / web component library where the aim is to provide a multi tierd design system, where developers can "buy-in" to as much of the design system as they like, without feeling like alot of the design system/framework is going to waste.
+Tealeaf is a modular design system / css framework / web component library where the aim is to provide a multi tierd design system, where developers can "buy-in" to as much of the design system as they like, without feeling like alot of the design system/framework is going to waste.
 
 <center><h2>What packages are available?</h2></center>
 
-TealUI is broken down into four distinct packages.
+Tealeaf is broken down into four distinct packages.
 
-### @teal-ui/tokens
+### @tealeaf/tokens
 
 - A set of design tokens declared at root level
 
-### @teal-ui/elements
+### @tealeaf/elements
 
 - A css normalisation and opinionated classless css framework
 
-### @teal-ui/css
+### @tealeaf/css
 
 - A utility based css framework / buildtool
 
-### @teal-ui/components
+### @tealeaf/components
 
 - A web component library which makes use of the previous packages
 
@@ -39,7 +39,7 @@ TealUI is broken down into four distinct packages.
 
 <center><h2>Overviews</h2></center>
 
-## @teal-ui/tokens
+## @tealeaf/tokens
 
 tokens provides the user with a stylesheet containing a set of design tokens (css custom properties/css variables), these tokens then give the user a curated set of values to use in their project. This gives the developers more consistancy when reaching for values for
 
@@ -51,7 +51,7 @@ tokens provides the user with a stylesheet containing a set of design tokens (cs
 
 ### 1. Colors
 
-TealUI provides users with a curated spectrum of colors to chose from, instead of wildy picking colors from a color picker, we provide a 10 scale tonal scale for Red,Pink,Purple,Indigo,Blue,Teal,Green,Yellow and various greys (grey, warm-grey and cool-grey)
+Tealeaf provides users with a curated spectrum of colors to chose from, instead of wildy picking colors from a color picker, we provide a 10 scale tonal scale for Red,Pink,Purple,Indigo,Blue,Teal,Green,Yellow and various greys (grey, warm-grey and cool-grey)
 
 color tokens follow the format of:
 
@@ -68,8 +68,8 @@ the one exception for this is black and white, which scales from `000` to `300`
 
 ### 2. Scales
 
-## @teal-ui/elements
+## @tealeaf/elements
 
-## @teal-ui/css
+## @tealeaf/css
 
-## @teal-ui/components
+## @tealeaf/components

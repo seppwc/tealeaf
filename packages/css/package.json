@@ -1,11 +1,11 @@
 {
-  "name": "@teal-ui/css",
+  "name": "@tealeaf/css",
   "version": "0.0.1",
   "description": "> TODO: description",
   "author": "phl3bas <phl3bas87@gmail.com>",
-  "homepage": "https://github.com/Phl3bas/Teal#readme",
+  "homepage": "https://github.com/Phl3bas/Tealeaf#readme",
   "license": "MIT",
-  "main": "teal-css.css",
+  "main": "tealeaf-css.css",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -14,22 +14,21 @@
     "package.json",
     "README.md",
     "LICENCE",
-    "teal-css.css",
-    "teal-css-lite.css"
+    "tealeaf-css.css"
   ],
   "publishConfig": {
     "access": "public"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Phl3bas/Teal.git"
+    "url": "git+https://github.com/Phl3bas/Tealeaf.git"
   },
   "scripts": {
     "build": "ts-node ./scripts/build.ts",
     "test": "jest"
   },
   "bugs": {
-    "url": "https://github.com/Phl3bas/Teal/issues"
+    "url": "https://github.com/Phl3bas/Tealeaf/issues"
   },
   "devDependencies": {
     "@types/jest": "^26.0.20",
