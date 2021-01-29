@@ -15,7 +15,7 @@
     "test:reset": "lerna run test --scope=@tealeaf/elements",
     "test:ui": "lerna run test --scope=@tealeaf/components",
     "bootstrap": "lerna exec -- npm link",
-    "link-packages": "npm link @tealeaf/tokens && npm link @tealeaf/elements && npm link @tealeaf/css && npm link @tealeaf/ui",
+    "link-packages": "npm link @tealeaf/tokens && npm link @tealeaf/elements && npm link @tealeaf/css && npm link @tealeaf/components",
     "bootstrap:init": "npm-run-all bootstrap link-packages"
   },
   "devDependencies": {

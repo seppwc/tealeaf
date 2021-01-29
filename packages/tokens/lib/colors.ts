@@ -167,10 +167,10 @@ export const Colors: TealValueObject = {
   },
   brand: {
     primary: "#2BB9B9",
-    "primary-alt": "#69D2D2",
-    secondary: "#5499D2",
-    "secondary-alt": "#286697",
-    accent: "#6C44CD",
-    "accent-alt": "#DD6600",
+    "primary-alt": "#259E9E",
+    secondary: "#B4DEBD",
+    "secondary-alt": "#69BD7B",
+    accent: "#AE65C9",
+    "accent-alt": "#FF9031",
   },
 };
