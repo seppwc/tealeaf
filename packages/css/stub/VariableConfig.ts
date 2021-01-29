@@ -397,6 +397,7 @@ const DEFAULT_CONFIG = {
       auto: "auto",
       ...theme("spacing"),
     }),
+
     fontSize: {
       h1: "3.81rem",
       h2: "2.5rem",
@@ -637,6 +638,15 @@ const DEFAULT_CONFIG = {
       square: "square",
       inside: "inside",
       circle: "circle",
+      armenian: "armenian",
+      decimal: "decimal",
+      hebrew: "hebrew",
+      hiragana: "hiagana",
+      katakana: "katakana",
+      "lower-alpha": "lower-alpha",
+      "upper-alpha": "upper-alpha",
+      "lower-roman": "lower-roman",
+      "upper-roman": "upper-roman",
     },
     textDecoration: {
       none: "none",

@@ -1,8 +1,8 @@
 {
   "name": "@tealeaf/elements",
   "version": "0.0.1",
-  "description": "> TODO: description",
-  "author": "phl3bas <phl3bas87@gmail.com>",
+  "description": "Tealeaf - A beautifully modular design system",
+  "author": "phl3bas <info@builtbysepp.dev>",
   "homepage": "https://github.com/Phl3bas/Tealeaf#readme",
   "license": "MIT",
   "main": "tealeaf-elements.css",
@@ -14,7 +14,7 @@
     "package.json",
     "README.md",
     "LICENCE",
-    "teal-elements.css"
+    "tealeaf-elements.css"
   ],
   "publishConfig": {
     "access": "public"
