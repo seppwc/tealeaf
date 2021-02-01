@@ -11,6 +11,12 @@ import { joinTokenAndValueString } from "./joinTokenAndValueString";
 export function BuildToCSSString(obj: TealValueObject): string {
   const arr: string[] = [];
 
+  if (!Object.keys(obj).length) {
+    throw new TypeError(
+      "Empty Objects cannot be passed to BuildToCSSStringFunction"
+    );
+  }
+
   for (let i in obj) {
     let prefixedString = addPrefixStringTag(i);
 

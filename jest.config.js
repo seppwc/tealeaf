@@ -3,6 +3,8 @@ module.exports = {
   collectCoverageFrom: [
     "**/lib/*.ts",
     "**/utils/*.ts",
+    "!**/lib/index.ts",
+    "!**/utils/index.ts",
     "!**/node_modules/**",
     "!**/vendor/**",
     "!**/tokens/lib/**",
