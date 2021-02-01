@@ -10,9 +10,10 @@
     "build-w:elements": "lerna run build:watch --scope=@tealeaf/elements",
     "build:css": "lerna run build --scope=@tealeaf/css",
     "test": "jest --config ./jest.config.js",
-    "bootstrap": "lerna exec -- npm link",
+    "lerna:bootstrap": "lerna boostrap",
+    "create-links": "lerna exec -- npm link",
     "link-packages": "npm link @tealeaf/tokens && npm link @tealeaf/elements && npm link @tealeaf/css && npm link @tealeaf/components",
-    "bootstrap:init": "npm-run-all bootstrap link-packages"
+    "bootstrap:init": "npm-run-all lerna:bootstrap create-links link-packages"
   },
   "devDependencies": {
     "lerna": "^3.22.1",
