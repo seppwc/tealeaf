@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "es6",
     "module": "commonjs",
-    "lib": ["dom", "es6", "es2017", "esnext.asynciterable"],
+    "lib": ["es2020"],
     "sourceMap": false,
     "suppressImplicitAnyIndexErrors": true,
     "outDir": "./dist",
@@ -10,7 +10,6 @@
     "skipLibCheck": true,
     "noLib": false,
     "strict": true,
-    "allowJs": true,
     "importHelpers": true,
     "moduleResolution": "node",
     "removeComments": true,
@@ -30,6 +29,6 @@
     "baseUrl": ".",
     "forceConsistentCasingInFileNames": false
   },
-  "exclude": ["node_modules", "**/*.spec.ts"],
+  "exclude": ["node_modules"],
   "include": ["./packages/**/*.tsx", "./packages/**/*.ts", "index.d.ts"]
 }

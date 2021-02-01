@@ -1,9 +1,7 @@
 import { TealValueObject } from "../types";
-import {
-  addPrefixStringTag,
-  addSuffixStringTag,
-  joinTokenAndValueString,
-} from "./GenericTagUtils";
+import { addPrefixStringTag } from "./addPrefixStringTag";
+import { addSuffixStringTag } from "./addSuffixStringTag";
+import { joinTokenAndValueString } from "./joinTokenAndValueString";
 
 /**
  * Takes an TealValueObject and coverts keys and values into a css string of teal design tokens
@@ -24,19 +22,4 @@ export function BuildToCSSString(obj: TealValueObject): string {
   }
 
   return arr.join("");
-}
-
-/**
- * wraps a data string in a root tag exposing all tokens at root level
- * @param data
- */
-
-export function WrapWithRoot(data: string | string[]): string {
-  let stringData = data;
-
-  if (Array.isArray(data)) {
-    stringData = data.join(" ");
-  }
-
-  return `:root {${stringData}}`;
 }
