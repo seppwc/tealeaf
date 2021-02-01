@@ -13,7 +13,7 @@
     "lerna:bootstrap": "lerna boostrap",
     "create-links": "lerna exec -- npm link",
     "link-packages": "npm link @tealeaf/tokens && npm link @tealeaf/elements && npm link @tealeaf/css && npm link @tealeaf/components",
-    "bootstrap:init": "npm-run-all lerna:bootstrap create-links link-packages"
+    "tealeaf:init": "npm-run-all lerna:bootstrap create-links link-packages"
   },
   "devDependencies": {
     "lerna": "^3.22.1",
