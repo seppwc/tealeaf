@@ -54,27 +54,54 @@ function resolveClassDeclarations(
     if (isObject(value)) {
       const resolvedObject = resolveObject(classSet, value); // {"red-000" : #FFF3F3, etc...}
       const obj = Object.keys(resolvedObject).map((key) => {
-        return (
-          prefix +
-          resolveString(
-            className,
-            property,
-            key,
-            resolvedObject[key],
-            variantVal
-          )
-        );
+        const body = isXY(property)
+          ? resolveXYBody(property, resolvedObject[key])
+          : `${convertToKababCase(property)}:${resolvedObject[key]}`;
+
+        return prefix + resolveString(className, body, key, variantVal);
       });
 
       return _.flatten(obj);
     }
 
-    return [
-      prefix + resolveString(className, property, classSet, value, variantVal),
-    ];
+    const body = isXY(property)
+      ? resolveXYBody(property, value)
+      : `${convertToKababCase(property)}:${value}`;
+
+    return [prefix + resolveString(className, body, classSet, variantVal)];
   });
 
   return _.flattenDeep(arr);
+}
+
+function isXY(property: string): boolean {
+  switch (property) {
+    case "paddingX":
+      return true;
+    case "paddingY":
+      return true;
+    case "marginX":
+      return true;
+    case "marginY":
+      return true;
+    default:
+      return false;
+  }
+}
+
+function resolveXYBody(property: string, value: string): string {
+  switch (property) {
+    case "paddingY":
+      return `padding-top: ${value}; padding-bottom: ${value}`;
+    case "paddingX":
+      return `padding-left: ${value}; padding-right: ${value}`;
+    case "marginY":
+      return `margin-top: ${value}; margin-bottom: ${value}`;
+    case "marginX":
+      return `margin-left: ${value}; margin-right: ${value}`;
+  }
+
+  return "";
 }
 
 function getVariantSuffixString(variant: string): string {
@@ -96,21 +123,20 @@ function resolveObject(set: string, obj: { [key: string]: string }) {
 
 function resolveString(
   classname: string,
-  property: string,
+  body: string,
   classSet: string,
-  value: string,
   variant?: string
 ): string {
   if (variant) {
     const variantSuffix = getVariantSuffixString(variant);
     return `${escapeString(classname)}-${escapeString(
       classSet
-    )}${variantSuffix}:${variant}{${convertToKababCase(property)}:${value};}\n`;
+    )}${variantSuffix}:${variant}{${body};}`;
   }
 
   return `${escapeString(classname)}${classname && "-"}${escapeString(
     classSet
-  )}{${convertToKababCase(property)}:${value};}\n`;
+  )}{${body};}`;
 }
 
 // ` .{prefix}{className}{if-nest:classname}{set/scale}{variant}`{ {cssproperty}:{value}; }

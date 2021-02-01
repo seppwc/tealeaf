@@ -1,8 +1,5 @@
 import { colors, elevations, scales, eases, radius } from "../lib";
-import {
-  BuildToCSSString,
-  WrapWithRoot,
-} from "../utils/BuildStringFromObjectUtils";
+import { BuildToCSSString, WrapWithRoot } from "../utils";
 import { writeFile } from "fs";
 
 const values = [
@@ -13,4 +10,4 @@ const values = [
   BuildToCSSString(radius),
 ];
 
-writeFile("teal-tokens.css", WrapWithRoot(values), () => {});
+writeFile("tealeaf-tokens.css", WrapWithRoot(values), () => {});

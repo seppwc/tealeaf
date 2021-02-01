@@ -3,7 +3,7 @@ import DEFAULT_CONFIG from "../stub/DefaultConfig";
 import { buildClassNames } from "./BuildClassNames";
 import { resolveConfigFunctions } from "./resolveConfigFunctions";
 import { ConfigInterface } from "../types";
-import CleanCSS from "clean-css";
+import CleanCSS = require("clean-css");
 
 export async function BuildToFile(
   filename: string,
