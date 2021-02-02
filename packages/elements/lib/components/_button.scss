@@ -38,22 +38,22 @@ input[type="button"],
 input[type="reset"],
 [role="button"],
 input[type="color"] {
-  --tl-button-color: #165f5f;
+  --tl-button-hover: contrast(120%) brightness(0.95);
   display: inline-block;
   cursor: pointer;
   margin-block: 0.25rem;
   margin-inline-end: 0.25rem;
   background: rgb(223, 223, 223);
-  border: 1px solid rgba(223, 223, 223, 0.3);
+  border: 1px solid rgba(223, 223, 223, 0);
   padding: 0.65rem 1.5rem;
-  color: var(--tl-button-color);
+  color: #165f5f;
   border-radius: 0.25rem;
   outline: none;
   text-decoration: none;
   line-height: 1;
 
   &:visited {
-    color: var(--tl-button-color);
+    color: #165f5f;
   }
 
   &:focus {
@@ -62,7 +62,7 @@ input[type="color"] {
   }
 
   &:hover {
-    filter: brightness(0.95);
+    filter: var(--tl-button-hover);
   }
 }
 
@@ -72,10 +72,8 @@ input[type="button"]:disabled,
 input[type="reset"]:disabled,
 a[role="button"]:not([href]),
 a[role="button"][href=""] {
-  cursor: not-allowed;
   pointer-events: none;
-  filter: contrast(30%) saturate(90%) brightness(1.5);
-  color: #333333;
+  filter: contrast(30%) saturate(70%) brightness(1.25);
 
   &:hover {
     filter: none;
