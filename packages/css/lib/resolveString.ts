@@ -1,14 +1,17 @@
+import { Variants } from "../types";
 import { escapeString } from "../utils";
+
 import { getVariantSuffixString } from "./getVariantSuffixString";
 
 export function resolveString(
   classname: string,
   body: string,
   classSet: string,
-  variant?: string
+  variant?: Omit<Variants, "responsive">
 ): string {
-  if (variant) {
-    const variantSuffix = getVariantSuffixString(variant);
+  const variantSuffix = getVariantSuffixString(variant);
+
+  if (variantSuffix) {
     return `${escapeString(classname)}-${escapeString(
       classSet
     )}${variantSuffix}:${variant}{${body};}`;

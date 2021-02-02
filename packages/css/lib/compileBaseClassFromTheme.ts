@@ -3,13 +3,6 @@ import { ConfigInterface } from "../types";
 import * as _ from "lodash";
 import { resolveClassDeclarations } from "./resolveClassDeclarations";
 
-export enum Variants {
-  "responsive",
-  "hover",
-  "focus",
-  "visited",
-}
-
 export function compileBaseClassesFromTheme(
   config: ConfigInterface,
   prefix?: string
@@ -21,13 +14,13 @@ export function compileBaseClassesFromTheme(
     const variantList = config.variants[propertyName];
 
     return _.flatten([
-      ...variantList.map((v) =>
+      ...variantList.map((variants) =>
         resolveClassDeclarations(
           prefixedString,
           className,
           propertyName,
           theme_obj,
-          Variants[v]
+          variants
         )
       ),
     ]);
