@@ -1,12 +1,12 @@
 export function isXY(property: string): boolean {
-  switch (property) {
-    case "paddingX":
+  switch (property.toLowerCase()) {
+    case "paddingx":
       return true;
-    case "paddingY":
+    case "paddingy":
       return true;
-    case "marginX":
+    case "marginx":
       return true;
-    case "marginY":
+    case "marginy":
       return true;
     default:
       return false;
