@@ -1,3 +1,5 @@
-export function isObject(valueToCheck: any) {
-  return typeof valueToCheck === "object" && valueToCheck !== null;
+import { maxBy } from "lodash";
+
+export function isObject(valueToCheck: any): boolean {
+  return Object.prototype.toString.call(valueToCheck) === "[object Object]";
 }
