@@ -11,7 +11,7 @@
     "build:css": "lerna run build --scope=@tealeaf/css",
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "lerna:bootstrap": "lerna boostrap",
+    "lerna:bootstrap": "lerna bootstrap",
     "create-links": "lerna exec -- npm link",
     "link-packages": "npm link @tealeaf/tokens && npm link @tealeaf/elements && npm link @tealeaf/css && npm link @tealeaf/components",
     "tealeaf:init": "npm-run-all lerna:bootstrap create-links link-packages"
