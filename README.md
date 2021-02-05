@@ -35,7 +35,7 @@ Tealeaf is broken down into four distinct packages.
 
 ---
 
-### running this project
+### running this project for development 
 
 `git clone https://github.com/Phl3bas/Tealeaf.git`
 
