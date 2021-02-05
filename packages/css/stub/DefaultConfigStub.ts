@@ -1,4 +1,6 @@
-const DEFAULT_CONFIG = {
+import { ConfigInterface } from "../types";
+
+const DEFAULT_CONFIG: ConfigInterface = {
   options: {},
   theme: {
     screens: {
@@ -272,6 +274,7 @@ const DEFAULT_CONFIG = {
       "3xl": "var(--tl-radius-3xl)",
       round: "var(--tl-radius-round)",
     },
+
     backgroundColor: (theme: any) => theme("colors"),
     backgroundOpacity: (theme: any) => theme("opacity"),
     gap: (theme: any) => theme("spacing"), // change for own values
@@ -676,12 +679,8 @@ const DEFAULT_CONFIG = {
     overflow: {
       scroll: "scroll",
     },
-    overflowY: {
-      scroll: "scroll",
-    },
-    overflowX: {
-      scroll: "scroll",
-    },
+    overflowY: (theme: any) => theme("overflow"),
+    overflowX: (theme: any) => theme("overflow"),
     listStyle: {
       none: "none",
       square: "square",
@@ -767,10 +766,10 @@ const DEFAULT_CONFIG = {
   },
   classNames: {
     boxShadow: "shadow",
-    borderWidth: "bw",
-    borderColor: "bc",
-    borderRadius: "br",
-    borderStyle: "bs",
+    borderWidth: "border",
+    borderColor: "border",
+    borderRadius: "radius",
+    borderStyle: "border",
     backgroundColor: "bg",
     backgroundOpacity: "bg-a",
     gap: "gap",
