@@ -11,7 +11,7 @@
 
 <center><h2>What is Tealeaf?</h2></center>
 
-Tealeaf is a modular design system / css framework / web component library where the aim is to provide a multi tierd design system, where developers can "buy-in" to as much of the design system as they like, without feeling like alot of the design system/framework is going to waste.
+Tealeaf is a modular UI tool kit which provides the user with, a design system, a classless css framework and reset, an atomic css framework and a web component library. The aim of Tealeaf is to provide a multi tierd UI kit, where developers can "buy-in" to as much of the system as they like, without feeling like alot of the design system/framework is going to waste.
 
 <center><h2>What packages are available?</h2></center>
 
