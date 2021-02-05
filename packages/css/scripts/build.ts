@@ -1,6 +1,6 @@
 import { BuildToFile } from "../lib/BuildToFile";
-import LITE_CONFIG from "../stub/VariableConfig";
+import CONFIG from "../stub/DefaultConfigStub";
 
-Promise.all([BuildToFile("tealeaf-css", LITE_CONFIG)]).then(() => {
+Promise.all([BuildToFile("tealeaf-css", CONFIG)]).then(() => {
   console.log("Finished Build");
 });
