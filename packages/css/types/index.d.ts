@@ -1,3 +1,5 @@
+import { Variants } from "../lib/compileBaseClassFromTheme";
+
 export type TealValueObject = { [key: string]: { [key: string]: string } };
 
 export type TealThemeParamInterface = {
@@ -71,8 +73,10 @@ export interface ThemeInterface {
   textOpacity: TealThemeParamInterface;
 }
 
+export type Variants = "responsive" | "hover" | "focus" | "visited";
+
 export interface VariantsInterface {
-  [key: string]: string[];
+  [key: string]: Variants[];
 }
 
 export interface ClassInterface {
