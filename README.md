@@ -5,7 +5,7 @@
 <center>
 <img src="https://github.com/Phl3bas/Tealeaf/blob/main/assets/tealeaf-primary.svg" alt="tealeaf logo"/>
 </center>
-<center><p>A Beautifully modular Design System</p></center>
+<center><p>A Beautifully modular UI toolkit</p></center>
 
 ---
 
