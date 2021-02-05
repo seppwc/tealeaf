@@ -1,5 +1,5 @@
 import { writeFile } from "fs/promises";
-import DEFAULT_CONFIG from "../stub/DefaultConfig";
+import DEFAULT_CONFIG from "../stub/DefaultConfigStub";
 import { buildClassNames } from "./BuildClassNames";
 import { resolveConfigFunctions } from "./resolveConfigFunctions";
 import { ConfigInterface } from "../types";
