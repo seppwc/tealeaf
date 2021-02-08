@@ -73,7 +73,7 @@ input[type="reset"]:disabled,
 a[role="button"]:not([href]),
 a[role="button"][href=""] {
   pointer-events: none;
-  filter: contrast(30%) saturate(70%) brightness(1.25);
+  filter: contrast(50%) saturate(70%) brightness(1.1);
 
   &:hover {
     filter: none;
