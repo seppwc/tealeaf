@@ -5,13 +5,15 @@
 <center>
 <img src="https://github.com/Phl3bas/Tealeaf/blob/main/assets/tealeaf-primary.svg" alt="tealeaf logo"/>
 </center>
+
 <center><p>A Beautifully modular UI Tool Kit</p></center>
+
 
 ---
 
 <center><h2>What is Tealeaf?</h2></center>
 
-Tealeaf is a modular design system / css framework / web component library where the aim is to provide a multi tierd design system, where developers can "buy-in" to as much of the design system as they like, without feeling like alot of the design system/framework is going to waste.
+Tealeaf is a modular UI tool kit which provides the user with, a design system, a classless css framework and reset, an atomic css framework and a web component library. The aim of Tealeaf is to provide a multi tierd UI kit, where developers can "buy-in" to as much of the system as they like, without feeling like alot of the design system/framework is going to waste.
 
 <center><h2>What packages are available?</h2></center>
 
@@ -35,7 +37,7 @@ Tealeaf is broken down into four distinct packages.
 
 ---
 
-### running this project
+### running this project for development 
 
 `git clone https://github.com/Phl3bas/Tealeaf.git`
 
