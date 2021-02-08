@@ -1,12 +1,9 @@
 import { flatten, flattenDeep } from "lodash";
 import { Variants } from "../types";
 import { isObject } from "../utils";
-import { convertToKababCase } from "../utils";
-import { isXY } from "../utils/isXY";
-
 import { resolveObject } from "./resolveObject";
 import { resolveString } from "./resolveString";
-import { resolveXYBody } from "./resolveXYbody";
+import { resolveBody } from "./resolveBody";
 
 export function resolveClassDeclarations(
   prefix: string,
@@ -25,19 +22,14 @@ export function resolveClassDeclarations(
     if (isObject(value)) {
       const resolvedObject = resolveObject(classSet, value); // {"red-000" : #FFF3F3, etc...}
       const obj = Object.keys(resolvedObject).map((key) => {
-        const body = isXY(property)
-          ? resolveXYBody(property, resolvedObject[key])
-          : `${convertToKababCase(property)}:${resolvedObject[key]}`;
-
+        const body = resolveBody(property, resolvedObject[key]);
         return prefix + resolveString(className, body, key, variantVal);
       });
 
       return flatten(obj);
     }
 
-    const body = isXY(property)
-      ? resolveXYBody(property, value)
-      : `${convertToKababCase(property)}:${value}`;
+    const body = resolveBody(property, value);
 
     return [prefix + resolveString(className, body, classSet, variantVal)];
   });

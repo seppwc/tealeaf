@@ -1,6 +1,6 @@
-import { resolveXYBody } from "../lib/resolveXYbody";
+import { resolveCustomBody } from "../lib/resolveCustomBody";
 
-describe("resolveXYBody", () => {
+describe("resolveCustomBody", () => {
   const tests = [
     {
       title:
@@ -50,7 +50,7 @@ describe("resolveXYBody", () => {
 
   tests.forEach((test) => {
     it(test.title, () => {
-      expect(resolveXYBody(test.inputs.property, test.inputs.value)).toBe(
+      expect(resolveCustomBody(test.inputs.property, test.inputs.value)).toBe(
         test.output
       );
     });
