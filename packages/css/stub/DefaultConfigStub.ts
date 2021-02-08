@@ -279,7 +279,6 @@ const DEFAULT_CONFIG: ConfigInterface = {
 
     borderRadius: {
       none: "var(--tl-radius-none)",
-      xs: "var(--tl-radius-xs)",
       sm: "var(--tl-radius-sm)",
       md: "var(--tl-radius-md)",
       lg: "var(--tl-radius-lg)",
@@ -288,7 +287,14 @@ const DEFAULT_CONFIG: ConfigInterface = {
       "3xl": "var(--tl-radius-3xl)",
       round: "var(--tl-radius-round)",
     },
-
+    borderTopRadius: (theme: any) => theme("borderRadius"),
+    borderRightRadius: (theme: any) => theme("borderRadius"),
+    borderBottomRadius: (theme: any) => theme("borderRadius"),
+    borderLeftRadius: (theme: any) => theme("borderRadius"),
+    borderTopLeftRadius: (theme: any) => theme("borderRadius"),
+    borderTopRightRadius: (theme: any) => theme("borderRadius"),
+    borderBottomRightRadius: (theme: any) => theme("borderRadius"),
+    borderBottomLeftRadius: (theme: any) => theme("borderRadius"),
     backgroundColor: (theme: any) => theme("colors"),
     backgroundOpacity: (theme: any) => theme("opacity"),
     gap: (theme: any) => theme("spacing"), // change for own values

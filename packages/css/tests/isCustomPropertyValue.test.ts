@@ -1,6 +1,6 @@
-import { isXY } from "../utils/isXY";
+import { isCustomPropertyValue } from "../utils/isCustomPropertyValue";
 
-describe("isXY", () => {
+describe("isCustomPropertyValue", () => {
   const tests = [
     { input: "paddingX", expected: true },
     { input: "paddingY", expected: true },
@@ -14,13 +14,21 @@ describe("isXY", () => {
     { input: "MARGINX", expected: true },
     { input: "MARGINY", expected: true },
     { input: "MARGINZ", expected: false },
+    { input: "borderradiustopleft", expected: true },
+    { input: "borderradiustopright", expected: true },
+    { input: "borderradiusbottomleft", expected: true },
+    { input: "borderradiusbottomright", expected: true },
+    { input: "borderRadiusTopLeft", expected: true },
+    { input: "borderRadiusTopRight", expected: true },
+    { input: "borderRadiusBottomLeft", expected: true },
+    { input: "borderRadiusBottomRight", expected: true },
     { input: "sasd", expected: false },
     { input: "margin", expected: false },
   ];
 
   it("should return true if property is paddingX paddingY marginX or marginY else false", () => {
     tests.forEach((test) => {
-      expect(isXY(test.input)).toBe(test.expected);
+      expect(isCustomPropertyValue(test.input)).toBe(test.expected);
     });
   });
 });
