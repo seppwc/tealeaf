@@ -41,3 +41,11 @@ Tealeaf is broken down into four distinct packages.
 `npm install`
 
 `npm run tealeaf:init`
+
+### build this project
+
+in root dir
+
+npm run build:tokens
+npm run build:elements
+npm run build:css
