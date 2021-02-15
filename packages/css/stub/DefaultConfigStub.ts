@@ -296,7 +296,7 @@ const DEFAULT_CONFIG: ConfigInterface = {
     borderBottomRightRadius: (theme: any) => theme("borderRadius"),
     borderBottomLeftRadius: (theme: any) => theme("borderRadius"),
     backgroundColor: (theme: any) => theme("colors"),
-    backgroundOpacity: (theme: any) => theme("opacity"),
+    "--tl-background-alpha": (theme: any) => theme("opacity"),
     gap: (theme: any) => theme("spacing"), // change for own values
     height: (theme: any) => ({
       ...theme("spacing"),
@@ -755,7 +755,7 @@ const DEFAULT_CONFIG: ConfigInterface = {
     borderBottomColor: ["responsive", "hover", "focus"],
     borderLeftColor: ["responsive", "hover", "focus"],
     backgroundColor: ["responsive", "visited", "hover", "focus"],
-    backgroundOpacity: ["responsive", "visited", "hover", "focus"],
+    "--tl-background-alpha": ["responsive", "visited", "hover", "focus"],
     gap: ["responsive"],
     height: ["responsive"],
     minHeight: ["responsive"],
@@ -831,7 +831,7 @@ const DEFAULT_CONFIG: ConfigInterface = {
     borderBottomColor: "border-b",
     borderLeftColor: "border-l",
     backgroundColor: "bg",
-    backgroundOpacity: "bg-a",
+    "--tl-background-alpha": "bg-a",
     gap: "gap",
     height: "h",
     minHeight: "min-h",
