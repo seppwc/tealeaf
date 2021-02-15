@@ -2,20 +2,17 @@
 
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 
-<center>
-<img src="https://github.com/Phl3bas/Tealeaf/blob/main/assets/tealeaf-primary.svg" alt="tealeaf logo"/>
-</center>
+<img align="center" src="https://github.com/Phl3bas/Tealeaf/blob/main/assets/tealeaf-primary.svg" alt="tealeaf logo"/>
 
-<center><p>A Beautifully modular UI Tool Kit</p></center>
-
+<p align="center">A Beautifully modular UI Tool Kit</p>
 
 ---
 
-<center><h2>What is Tealeaf?</h2></center>
+## What is Tealeaf?
 
 Tealeaf is a modular UI tool kit which provides the user with, a design system, a classless css framework and reset, an atomic css framework and a web component library. The aim of Tealeaf is to provide a multi tierd UI kit, where developers can "buy-in" to as much of the system as they like, without feeling like alot of the design system/framework is going to waste.
 
-<center><h2>What packages are available?</h2></center>
+## What packages are available?
 
 Tealeaf is broken down into four distinct packages.
 
@@ -37,7 +34,7 @@ Tealeaf is broken down into four distinct packages.
 
 ---
 
-### running this project for development 
+### running this project for development
 
 `git clone https://github.com/Phl3bas/Tealeaf.git`
 
