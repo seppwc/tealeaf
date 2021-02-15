@@ -38,22 +38,23 @@ input[type="button"],
 input[type="reset"],
 [role="button"],
 input[type="color"] {
-  --tl-button-hover: contrast(120%) brightness(0.95);
+  --tl-button-hover: brightness(0.93);
   display: inline-block;
   cursor: pointer;
   margin-block: 0.25rem;
   margin-inline-end: 0.25rem;
-  background: rgb(223, 223, 223);
+  background: #dcdcdc;
   border: 1px solid rgba(223, 223, 223, 0);
   padding: 0.65rem 1.5rem;
-  color: #165f5f;
+  color: #445058;
   border-radius: 0.25rem;
   outline: none;
   text-decoration: none;
   line-height: 1;
+  font-weight: 500;
 
   &:visited {
-    color: #165f5f;
+    color: #445058;
   }
 
   &:focus {
@@ -73,8 +74,9 @@ input[type="reset"]:disabled,
 a[role="button"]:not([href]),
 a[role="button"][href=""] {
   pointer-events: none;
-  filter: contrast(50%) saturate(70%) brightness(1.1);
-
+  background: #a7a7a7;
+  color: #364046;
+  filter: grayscale(1);
   &:hover {
     filter: none;
   }
