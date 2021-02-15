@@ -2,19 +2,20 @@ details {
   border-radius: 0.38rem;
   background: white;
   box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
-  margin-block-end: 1rem;
+  margin-bottom: 1rem;
 
   &[open] {
-    padding-block-end: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 
   & > *:not(summary) {
-    margin-inline: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   & summary {
     padding: 0.5rem 1rem;
-    border-block-end: none;
+    border-bottom: none;
     border-radius: 0.38rem;
     cursor: pointer;
     border: 1px solid transparent;
@@ -31,7 +32,7 @@ details {
   }
 
   &[open] > summary {
-    border-block-end: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
     background: #f9f9f9;
     border-radius: 0.38rem 0.38rem 0 0;
   }
