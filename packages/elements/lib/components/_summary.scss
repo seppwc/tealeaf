@@ -1,7 +1,7 @@
 details {
-  border-radius: var(--tl-radius-md);
+  border-radius: 0.38rem;
   background: white;
-  box-shadow: var(--tl-shadow-1);
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
   margin-block-end: 1rem;
 
   &[open] {
@@ -15,24 +15,24 @@ details {
   & summary {
     padding: 0.5rem 1rem;
     border-block-end: none;
-    border-radius: var(--tl-radius-md);
+    border-radius: 0.38rem;
     cursor: pointer;
     border: 1px solid transparent;
 
     &:focus {
       outline: none;
       border: 1px solid #2bb9b9;
-      box-shadow: 0 0 0px 2px #2bb9b9;
+      box-shadow: 0 0 0px 0.5px #2bb9b9;
     }
 
     &:hover {
-      background: var(--tl-white-100);
+      background: #f9f9f9;
     }
   }
 
   &[open] > summary {
-    border-block-end: 1px solid var(--tl-cool-grey-100);
-    background: var(--tl-white-100);
-    border-radius: var(--tl-radius-md) var(--tl-radius-md) 0 0;
+    border-block-end: 1px solid #dcdcdc;
+    background: #f9f9f9;
+    border-radius: 0.38rem 0.38rem 0 0;
   }
 }
