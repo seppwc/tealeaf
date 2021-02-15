@@ -46,6 +46,8 @@ Tealeaf is broken down into four distinct packages.
 
 in root dir
 
-npm run build:tokens
-npm run build:elements
-npm run build:css
+`npm run build:tokens`
+
+`npm run build:elements`
+
+`npm run build:css`
