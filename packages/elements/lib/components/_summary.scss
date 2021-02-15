@@ -1,5 +1,4 @@
 details {
-  border-radius: 0.38rem;
   background: white;
   box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
   margin-bottom: 1rem;
@@ -16,7 +15,7 @@ details {
   & summary {
     padding: 0.5rem 1rem;
     border-bottom: none;
-    border-radius: 0.38rem;
+
     cursor: pointer;
     border: 1px solid transparent;
 
@@ -32,8 +31,6 @@ details {
   }
 
   &[open] > summary {
-    border-bottom: 1px solid #dcdcdc;
     background: #f9f9f9;
-    border-radius: 0.38rem 0.38rem 0 0;
   }
 }
