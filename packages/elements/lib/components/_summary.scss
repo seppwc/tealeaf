@@ -19,12 +19,6 @@ details {
     cursor: pointer;
     border: 1px solid transparent;
 
-    &:focus {
-      outline: none;
-      border: 1px solid #2bb9b9;
-      box-shadow: 0 0 0px 0.5px #2bb9b9;
-    }
-
     &:hover {
       background: #f9f9f9;
     }
