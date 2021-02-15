@@ -56,20 +56,12 @@ select,
 input[list] {
   --tl-input-success: #69bd7b;
   --tl-input-failure: #da4a4a;
-  --tl-input-focus: #2bb9b9;
-  // display: flex;
   width: calc(100% - 0.5rem - 2px);
   padding: 0;
   padding-left: 0.5rem;
   border: 1px solid #b5c0c6;
   height: 2rem;
   border-radius: 0.25rem;
-}
-
-select:focus {
-  outline: none;
-  border: 1px solid var(--tl-input-focus);
-  box-shadow: 0 0 0px 2px var(--tl-input-focus);
 }
 
 textarea {

@@ -57,11 +57,6 @@ input[type="color"] {
     color: #445058;
   }
 
-  &:focus {
-    border: 1px solid #2bb9b9;
-    box-shadow: 0 0 0px 2px #2bb9b9;
-  }
-
   &:hover {
     filter: var(--tl-button-hover);
   }
