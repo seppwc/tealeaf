@@ -137,8 +137,6 @@ template {
 }
 
 *:focus {
-  box-shadow: 0 0 1px 3px #2bb9b9;
-  box-shadow: 0 0 0 3px activeborder; /* Blink, Chrome */
-  box-shadow: 0 0 0 3px -moz-mac-focusring; /* Firefox */
-  outline: auto 0 -webkit-focus-ring-color; /* Webkit, Safari */
+  outline: 1px dotted #2bb9b9;
+  // box-shadow: 0 0 1px 1px #2bb9b9;
 }
