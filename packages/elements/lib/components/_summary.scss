@@ -1,38 +1,36 @@
 details {
-  border-radius: var(--tl-radius-md);
   background: white;
-  box-shadow: var(--tl-shadow-1);
-  margin-block-end: 1rem;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
 
   &[open] {
-    padding-block-end: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 
   & > *:not(summary) {
-    margin-inline: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   & summary {
     padding: 0.5rem 1rem;
-    border-block-end: none;
-    border-radius: var(--tl-radius-md);
+    border-bottom: none;
+
     cursor: pointer;
     border: 1px solid transparent;
 
     &:focus {
       outline: none;
       border: 1px solid #2bb9b9;
-      box-shadow: 0 0 0px 2px #2bb9b9;
+      box-shadow: 0 0 0px 0.5px #2bb9b9;
     }
 
     &:hover {
-      background: var(--tl-white-100);
+      background: #f9f9f9;
     }
   }
 
   &[open] > summary {
-    border-block-end: 1px solid var(--tl-cool-grey-100);
-    background: var(--tl-white-100);
-    border-radius: var(--tl-radius-md) var(--tl-radius-md) 0 0;
+    background: #f9f9f9;
   }
 }
