@@ -33,12 +33,11 @@ button:-moz-focusring,
 }
 
 button,
-input[type="submit"],
-input[type="button"],
-input[type="reset"],
+[type="submit"],
+[type="button"],
+[type="reset"],
 [role="button"],
-input[type="color"] {
-  --tl-button-hover: brightness(0.93);
+[type="color"] {
   display: inline-block;
   cursor: pointer;
   margin-block: 0.25rem;
@@ -46,7 +45,7 @@ input[type="color"] {
   background: #dcdcdc;
   border: 1px solid rgba(223, 223, 223, 0);
   padding: 0.65rem 1.5rem;
-  color: #445058;
+  color: hsla(0, 0%, 14.9%, 1);
   border-radius: 0.25rem;
   outline: none;
   text-decoration: none;
@@ -54,20 +53,16 @@ input[type="color"] {
   font-weight: 500;
 
   &:visited {
-    color: #445058;
-  }
-
-  &:hover {
-    filter: var(--tl-button-hover);
+    color: hsla(0, 0%, 14.9%, 1);
   }
 }
 
 button:disabled,
-input[type="submit"]:disabled,
-input[type="button"]:disabled,
-input[type="reset"]:disabled,
-a[role="button"]:not([href]),
-a[role="button"][href=""] {
+[type="submit"]:disabled,
+[type="button"]:disabled,
+[type="reset"]:disabled,
+[role="button"]:not([href]),
+[role="button"][href=""] {
   pointer-events: none;
   background: #a7a7a7;
   color: #364046;
