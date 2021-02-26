@@ -40,8 +40,8 @@ button,
 [type="color"] {
   display: inline-block;
   cursor: pointer;
-  margin-block: 0.25rem;
-  margin-inline-end: 0.25rem;
+  margin: 0.25rem 0;
+  margin-right: 0.25rem;
   background: #dcdcdc;
   border: 1px solid rgba(223, 223, 223, 0);
   padding: 0.65rem 1.5rem;
