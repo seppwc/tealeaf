@@ -30,7 +30,7 @@ Tealeaf is broken down into four distinct packages.
 
 ### @tealeaf/components
 
-- A flexible web component library
+- A flexible web component library (not yet released in beta)
 
 ---
 
@@ -51,3 +51,13 @@ in root dir
 `npm run build:elements`
 
 `npm run build:css`
+
+
+## Disclaimer!!
+
+Tealeaf and its packages are currently in developement and does not have a stable (1.x.x) release yet, because of this the api for the packages may be volatile between versions, it is encouraged to only to use the beta versions in non-production grade projects until a stable release has been announced! The current versions are available on npm/unpkg if you wish to use them!
+
+```bash
+npm install @tealeaf/tokens @tealeaf/elements @tealeaf/css
+```
+
