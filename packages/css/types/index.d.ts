@@ -1,6 +1,6 @@
 import { Variants } from "../lib/compileBaseClassFromTheme";
 
-export type TealValueObject = { [key: string]: { [key: string]: string } };
+export type TealeafValueObject = { [key: string]: { [key: string]: string } };
 
 export interface ConfigInterface {
   options?: OptionsInterface;
@@ -13,10 +13,10 @@ export interface OptionsInterface {
   [key: string]: any;
 }
 export interface ThemeInterface {
-  [key: string]: Specific<TealThemeParamInterface>;
+  [key: string]: Specific<TealeafThemeParamInterface>;
 }
 
-export type TealThemeParamInterface = {
+export type TealeafThemeParamInterface = {
   [key: string]: any | ((any) => any);
 };
 
