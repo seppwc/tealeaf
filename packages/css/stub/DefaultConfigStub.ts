@@ -222,6 +222,11 @@ const DEFAULT_CONFIG: ConfigInterface = {
       "23": "var(--tl-size-23)",
       "24": "var(--tl-size-24)",
       "25": "var(--tl-size-25)",
+      "26": "var(--tl-size-26)",
+      "27": "var(--tl-size-27)",
+      "28": "var(--tl-size-28)",
+      "29": "var(--tl-size-29)",
+      "30": "var(--tl-size-30)",
     },
     boxShadow: {
       none: "var(--tl-shadow-0)",
