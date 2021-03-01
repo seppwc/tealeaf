@@ -1,6 +1,6 @@
 import { isObject } from "./isObject";
 
-function applyOpacityToken(colors: any, opacityToken: string) {
+export function applyOpacityToken(colors: any, opacityToken: string) {
   // copy object passed
   let appliedObject = { ...colors };
 

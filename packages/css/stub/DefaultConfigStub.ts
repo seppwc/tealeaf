@@ -1,4 +1,5 @@
 import { ConfigInterface } from "../types";
+import { applyOpacityToken } from "../utils";
 
 const DEFAULT_CONFIG: ConfigInterface = {
   options: {},
@@ -244,7 +245,9 @@ const DEFAULT_CONFIG: ConfigInterface = {
       3: "3px",
       4: "4px",
     },
-    borderColor: (theme: any) => theme("colors"),
+    "--tl-border-alpha": (theme: any) => theme("opacity"),
+    borderColor: (theme: any) =>
+      applyOpacityToken(theme("colors"), "--tl-border-alpha"),
     borderStyle: {
       none: "none",
       hidden: "hidden",
@@ -265,10 +268,14 @@ const DEFAULT_CONFIG: ConfigInterface = {
     borderRightStyle: (theme: any) => theme("borderStyle"),
     borderBottomStyle: (theme: any) => theme("borderStyle"),
     borderLeftStyle: (theme: any) => theme("borderStyle"),
-    borderTopColor: (theme: any) => theme("color"),
-    borderRightColor: (theme: any) => theme("color"),
-    borderBottomColor: (theme: any) => theme("color"),
-    borderLeftColor: (theme: any) => theme("color"),
+    borderTopColor: (theme: any) =>
+      applyOpacityToken(theme("colors"), "--tl-border-alpha"),
+    borderRightColor: (theme: any) =>
+      applyOpacityToken(theme("colors"), "--tl-border-alpha"),
+    borderBottomColor: (theme: any) =>
+      applyOpacityToken(theme("colors"), "--tl-border-alpha"),
+    borderLeftColor: (theme: any) =>
+      applyOpacityToken(theme("colors"), "--tl-border-alpha"),
 
     borderRadius: {
       none: "var(--tl-radius-none)",
@@ -288,8 +295,10 @@ const DEFAULT_CONFIG: ConfigInterface = {
     borderTopRightRadius: (theme: any) => theme("borderRadius"),
     borderBottomRightRadius: (theme: any) => theme("borderRadius"),
     borderBottomLeftRadius: (theme: any) => theme("borderRadius"),
-    backgroundColor: (theme: any) => theme("colors"),
+    backgroundColor: (theme: any) =>
+      applyOpacityToken(theme("colors"), "--tl-background-alpha"),
     "--tl-background-alpha": (theme: any) => theme("opacity"),
+    "--tl-text-alpha": (theme: any) => theme("opacity"),
     gap: (theme: any) => theme("spacing"), // change for own values
     height: (theme: any) => ({
       ...theme("spacing"),
@@ -472,7 +481,8 @@ const DEFAULT_CONFIG: ConfigInterface = {
       body: "1rem",
       sm: "0.8rem",
     },
-    color: (theme: any) => theme("colors"),
+    color: (theme: any) =>
+      applyOpacityToken(theme("colors"), "--tl-text-alpha"),
     display: {
       none: "none",
       initial: "initial",
@@ -748,7 +758,9 @@ const DEFAULT_CONFIG: ConfigInterface = {
     borderBottomColor: ["responsive", "hover", "focus"],
     borderLeftColor: ["responsive", "hover", "focus"],
     backgroundColor: ["responsive", "visited", "hover", "focus"],
+    "--tl-border-alpha": ["responsive", "visited", "hover", "focus"],
     "--tl-background-alpha": ["responsive", "visited", "hover", "focus"],
+    "--tl-text-alpha": ["responsive", "visited", "hover", "focus"],
     gap: ["responsive"],
     height: ["responsive"],
     minHeight: ["responsive"],
@@ -801,6 +813,7 @@ const DEFAULT_CONFIG: ConfigInterface = {
     boxShadow: "shadow",
     borderWidth: "border",
     borderColor: "border",
+    "--tl-border-alpha": "border-a",
     borderRadius: "radius",
     borderTopRadius: "radius-t",
     borderRightRadius: "radius-r",
@@ -825,6 +838,7 @@ const DEFAULT_CONFIG: ConfigInterface = {
     borderLeftColor: "border-l",
     backgroundColor: "bg",
     "--tl-background-alpha": "bg-a",
+    "--tl-text-alpha": "text-a",
     gap: "gap",
     height: "h",
     minHeight: "min-h",
