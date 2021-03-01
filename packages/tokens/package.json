@@ -18,7 +18,6 @@
     "test": "tests"
   },
   "files": [
-    "lib/*",
     "tealeaf-tokens.css",
     "LICENCE",
     "README.md",
