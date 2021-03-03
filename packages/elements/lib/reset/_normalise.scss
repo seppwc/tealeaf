@@ -137,6 +137,6 @@ template {
 }
 
 *:focus {
-  outline: 1px dotted #2bb9b9;
-  // box-shadow: 0 0 1px 1px #2bb9b9;
+  outline: none;
+  box-shadow: 0 0 0 2px hsl(207.1, 58.3%, 57.6%);
 }
