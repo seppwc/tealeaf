@@ -17,7 +17,7 @@ export function applyOpacityToken(colors: any, opacityToken: string) {
       // string replacement to variable declaration, with passed opacity token
       const c = appliedNestedObject[key].replace(
         ",1)",
-        `,var(${opacityToken}, 1)`
+        `,var(${opacityToken}, 1))`
       );
 
       // override value in nested object with new placed string
