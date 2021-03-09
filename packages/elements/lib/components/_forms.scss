@@ -13,6 +13,8 @@ label {
 
 input,
 textarea {
+  box-shadow: inset 0px -1px 2px rgba(0, 0, 0, 0.14);
+  background-color: hsla(0, 0%, 92.9%, 1);
   color: #333333;
   margin-bottom: 0.5rem;
 
@@ -20,11 +22,11 @@ textarea {
     color: #8495a0;
   }
 
-  &:focus {
-    outline: none;
-    border: 1px solid var(--tl-input-focus);
-    box-shadow: 0 0 0px 2px var(--tl-input-focus);
-  }
+  // &:focus {
+  //   outline: none;
+  //   border: 1px solid var(--tl-input-focus);
+  //   box-shadow: 0 0 0px 2px var(--tl-input-focus);
+  // }
 
   &:required:not(:placeholder-shown):valid {
     outline: none;
@@ -39,27 +41,28 @@ textarea {
   }
 }
 
-input[type="text"],
-input[type="search"],
-input[type="email"],
-input[type="tel"],
-input[type="url"],
-input[type="number"],
-input[type="password"],
-input[type="date"],
-input[type="datetime-local"],
-input[type="month"],
-input[type="week"],
-input[type="time"],
+[type="text"],
+[type="search"],
+[type="email"],
+[type="tel"],
+[type="url"],
+[type="number"],
+[type="password"],
+[type="date"],
+[type="datetime-local"],
+[type="month"],
+[type="week"],
+[type="time"],
 textarea,
 select,
-input[list] {
+[list] {
   --tl-input-success: #69bd7b;
   --tl-input-failure: #da4a4a;
   width: calc(100% - 0.5rem - 2px);
   padding: 0;
   padding-left: 0.5rem;
-  border: 1px solid #b5c0c6;
+  border: 1px solid transparent;
+
   height: 2rem;
   border-radius: 0.25rem;
 }
@@ -72,9 +75,11 @@ textarea {
 
 select {
   width: 100%;
+  background: hsla(0, 0%, 92.9%, 1);
+  box-shadow: inset 0px -1px 2px rgba(0, 0, 0, 0.14);
 }
 
-input[type="search"] {
+[type="search"] {
   width: 100%;
   outline-offset: 0;
 }
@@ -92,8 +97,8 @@ fieldset {
   }
 }
 
-input[type="checkbox"],
-input[type="radio"] {
+[type="checkbox"],
+[type="radio"] {
   &:focus {
     outline: none;
     border: none;
@@ -101,21 +106,21 @@ input[type="radio"] {
   }
 }
 
-input[type="checkbox"] {
-  margin-inline-end: 5px;
+[type="checkbox"] {
+  margin-right: 5px;
 }
 
-input[type="radio"] {
-  margin-inline-end: 4px;
+[type="radio"] {
+  margin-right: 4px;
 }
 
-input[type="file"] {
+[type="file"] {
   padding: 5px;
   border: 1px solid #ced5d9;
   border-radius: 0.25rem;
 }
 
-input[type="color"] {
+[type="color"] {
   padding: 2px;
   height: 1.75rem;
   width: 2rem;
@@ -123,7 +128,7 @@ input[type="color"] {
   color: #404040;
 }
 
-input[type="range"] {
+[type="range"] {
   cursor: grab;
 
   &:active {
@@ -131,15 +136,15 @@ input[type="range"] {
   }
 }
 
-input[type="email"] {
+[type="email"] {
   &:not(:placeholder-shown):valid {
     outline: none;
     border: 1px solid var(--tl-input-success);
-    box-shadow: 0 0 0px 2px var(--tl-input-success);
+    box-shadow: inset 0 0 0px 1px var(--tl-input-success);
   }
   &:not(:placeholder-shown):invalid {
     outline: none;
     border: 1px solid var(--tl-input-failure);
-    box-shadow: 0 0 0px 2px var(--tl-input-failure);
+    box-shadow: inset 0 0 0px 1px var(--tl-input-failure);
   }
 }
