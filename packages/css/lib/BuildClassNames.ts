@@ -8,10 +8,15 @@ export function buildClassNames(
   screentag: string,
   screenvalue: string
 ): string {
-  return screentag === "none"
-    ? compileBaseClassesFromTheme(config)
-    : WrapWithMediaQuery(
-        compileBaseClassesFromTheme(config, screentag),
-        screenvalue
-      );
+  const res =
+    screentag === "none"
+      ? compileBaseClassesFromTheme(config)
+      : WrapWithMediaQuery(
+          compileBaseClassesFromTheme(config, screentag),
+          screenvalue
+        );
+
+  console.log(res);
+
+  return res;
 }
