@@ -69,9 +69,10 @@ button:disabled,
 [role="button"]:not([href]),
 [role="button"][href=""] {
   pointer-events: none;
-  background: #a7a7a7;
-  color: #364046;
-  filter: grayscale(1);
+  background: #a3a3a3 !important;
+  color: #364046 !important;
+  border-color: transparent !important;
+  // filter: grayscale(1);
   &:hover {
     filter: none;
   }

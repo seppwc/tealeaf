@@ -13,13 +13,13 @@ label {
 
 input,
 textarea {
-  box-shadow: inset 0px -1px 2px rgba(0, 0, 0, 0.14);
-  background-color: hsla(0, 0%, 92.9%, 1);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+  background-color: hsla(0, 0%, 98%, 1);
   color: #333333;
   margin-bottom: 0.5rem;
 
   &::placeholder {
-    color: #8495a0;
+    color: hsla(203.5, 13.1%, 65.7%, 1);
   }
 
   // &:focus {
@@ -31,13 +31,13 @@ textarea {
   &:required:not(:placeholder-shown):valid {
     outline: none;
     border: 1px solid var(--tl-input-success);
-    box-shadow: 0 0 0px 2px var(--tl-input-success);
+    box-shadow: 0 0 0px 1px var(--tl-input-success);
   }
 
   &:required:not(:placeholder-shown):invalid {
     outline: none;
     border: 1px solid var(--tl-input-failure);
-    box-shadow: 0 0 0px 2px var(--tl-input-failure);
+    box-shadow: 0 0 0px 1px var(--tl-input-failure);
   }
 }
 
@@ -75,8 +75,8 @@ textarea {
 
 select {
   width: 100%;
-  background: hsla(0, 0%, 92.9%, 1);
-  box-shadow: inset 0px -1px 2px rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+  background-color: hsla(0, 0%, 98%, 1);
 }
 
 [type="search"] {
