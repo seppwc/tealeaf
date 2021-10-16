@@ -1,6 +1,6 @@
-import { TealValueObject } from "../types";
+import { TealeafValueObject } from "../types";
 
-export const Colors: TealValueObject = {
+export const Colors: TealeafValueObject = {
   red: {
     "000": "hsla(0,70%,97.6%,1)",
     "100": "hsla(0,70%,91.6%,1)",

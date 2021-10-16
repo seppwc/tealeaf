@@ -1,6 +1,6 @@
-import { TealValueObject } from "../types";
+import { TealeafValueObject } from "../types";
 
-export const Scale: TealValueObject = {
+export const Scale: TealeafValueObject = {
   size: {
     "0": "0px",
     "1": "0.063rem",
