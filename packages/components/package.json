@@ -25,5 +25,8 @@
   },
   "bugs": {
     "url": "https://github.com/Phl3bas/Teal/issues"
+  },
+  "devDependencies": {
+    "typescript": "^4.3.5"
   }
 }
