@@ -2,19 +2,13 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "start": "parcel ./example/index.html",
-    "start:tokens": "npm-run-all --parallel start build:tokens",
-    "start:elements": "npm-run-all --parallel start build-w:elements",
-    "build:tokens": "lerna run build --scope=@tealeaf/tokens",
-    "build:elements": "lerna run build --scope=@tealeaf/elements",
-    "build-w:elements": "lerna run build:watch --scope=@tealeaf/elements",
-    "build:css": "lerna run build --scope=@tealeaf/css",
     "test": "jest",
     "test:coverage": "jest --coverage",
     "lerna:bootstrap": "lerna bootstrap",
     "create-links": "lerna exec -- npm link",
     "link-packages": "npm link @tealeaf/tokens && npm link @tealeaf/elements && npm link @tealeaf/css && npm link @tealeaf/components",
-    "postinstall": "npm-run-all lerna:bootstrap create-links link-packages"
+    "postinstall": "npm-run-all lerna:bootstrap create-links link-packages",
+    "lerna" : "lerna"
   },
   "devDependencies": {
     "@types/jest": "^26.0.20",
