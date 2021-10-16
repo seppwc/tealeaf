@@ -1,1 +1,1 @@
-export type TealValueObject = { [key: string]: { [key: string]: string } };
+export type TealeafValueObject = { [key: string]: { [key: string]: string } };

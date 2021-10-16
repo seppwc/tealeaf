@@ -1,6 +1,6 @@
-import { TealValueObject } from "../types";
+import { TealeafValueObject } from "../types";
 
-export const Elevation: TealValueObject = {
+export const Elevation: TealeafValueObject = {
   shadow: {
     "0": "none",
     "1": "0px 0px 1px 1px rgba(0, 0, 0, 0.1)",

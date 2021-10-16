@@ -1,6 +1,6 @@
-import { TealValueObject } from "../types";
+import { TealeafValueObject } from "../types";
 
-export const Eases: TealValueObject = {
+export const Eases: TealeafValueObject = {
   "ease-sine": {
     in: "cubic-bezier(0.12, 0, 0.39, 0)",
     out: "cubic-bezier(0.61, 1, 0.88, 1)",

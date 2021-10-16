@@ -1,6 +1,6 @@
-import { TealValueObject } from "../types";
+import { TealeafValueObject } from "../types";
 
-export const Radius: TealValueObject = {
+export const Radius: TealeafValueObject = {
   radius: {
     none: "0",
     xs: "0.125rem",
